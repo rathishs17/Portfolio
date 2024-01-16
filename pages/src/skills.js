@@ -39,7 +39,7 @@ const Acheivement = (
 <PlayArrowIcon/> Internshala Trainings-Web Development-jun 2023   <OpenInNewIcon/>
         <br  />
         <br />
-        <PlayArrowIcon/> Internshala Trainings-Web Development-jun 2023    <OpenInNewIcon/>           
+        <PlayArrowIcon/> Internshala Trainings-Core Java-july 2023    <OpenInNewIcon/>           
       </Typography>
     </CardContent>
     {/* <CardActions>
@@ -102,15 +102,18 @@ export default function SimplePaper() {
           <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': { textDecorationThickness: '2px', textDecorationOffset: '4px' , color:'grey' } }} color="inherit">
             About
           </Button></Link>
+          <Link to="/skills" >
           <Button  startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {   color:'grey' } }} color="inherit">
             Skills
-          </Button>
+          </Button></Link>
+          <Link to="/projects" >
           <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />}  sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {  color:'grey' } }} color="inherit">
             Projects
-          </Button>
+          </Button></Link>
+          <Link to="/contact" >
           <Button startIcon={<PhoneIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', '&:hover': {  color:'grey' } }} color="inherit">
             Contact
-          </Button>
+          </Button></Link>
         </Toolbar>
       </AppBar>
 
@@ -171,7 +174,7 @@ export default function SimplePaper() {
     <Box sx={{ marginTop: 5, padding: 4 }}>
         <Grid container spacing={3}>
           {/* Left Column (Image) */}
-          <Grid item xs={12} md={6} textAlign="center" marginTop="0%">
+          <Grid item xs={12} md={6} textAlign="" marginTop="0%">
           <Box sx={{ minWidth: 275 ,marginLeft:"5%",paddingLeft:"7%"}}>
       <Card variant="outlined">{Acheivement}</Card>
     </Box>

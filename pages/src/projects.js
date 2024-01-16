@@ -4,19 +4,20 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
-import HomeIcon from '@mui/icons-material/Home';
-
 import Typography from '@mui/material/Typography';
-import { Grid, AppBar, Toolbar, Link, Button as MuiButton, Tabs, Tab } from '@mui/material';
+import { Grid, AppBar, Toolbar, Button as MuiButton, Tabs, Tab } from '@mui/material';
+import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import WidgetsIcon from '@mui/icons-material/Widgets';
 import PhoneIcon from '@mui/icons-material/Phone';
 import elearn from  './images/elearnpic.jpg';
+import p from  './images/portfolio.jpg';
+import weather from  './images/weatherapp.jpg';
 import c4 from  './images/c4game.jpg';
-
 import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { Link } from 'react-router-dom';
 export default function MediaCard() {
   const [tabValue, setTabValue] = React.useState(0);
 
@@ -25,9 +26,7 @@ export default function MediaCard() {
   };
 
   return (
-    <>
-
-
+<>
 
 <AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' }}>
         <Toolbar>
@@ -42,17 +41,20 @@ export default function MediaCard() {
           <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': { textDecorationThickness: '2px', textDecorationOffset: '4px' , color:'grey' } }} color="inherit">
             About
           </Button></Link>
+          <Link to="/skills" >
           <Button  startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {   color:'grey' } }} color="inherit">
             Skills
-          </Button>
+          </Button></Link>
+          <Link to="/projects" >
           <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />}  sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {  color:'grey' } }} color="inherit">
             Projects
-          </Button>
+          </Button></Link>
+          <Link to="/contact" >
           <Button startIcon={<PhoneIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', '&:hover': {  color:'grey' } }} color="inherit">
             Contact
-          </Button>
+          </Button></Link>
         </Toolbar>
-      </AppBar>
+</AppBar>
 
 
 
@@ -83,8 +85,7 @@ export default function MediaCard() {
     E-learning platform
     </Typography>
     <Typography variant="body2" color="text.secondary">
-    An Online E-learning platform includes study materials,quizzes,dynamically adds a course by admin.Implemented by <b>MERN</b> Stack.
-    </Typography>
+    An online e-learning platform includes study materials, quizzes, and the ability to dynamically add courses by the administrator. It is implemented using the <b>MERN</b> stack.    </Typography>
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
@@ -97,7 +98,7 @@ export default function MediaCard() {
 
 
 
-<Grid item>
+{/* <Grid item>
 <Grid item>
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
@@ -119,33 +120,11 @@ export default function MediaCard() {
   </CardActions>
 </Card>
 </Grid>             
-</Grid>
+</Grid> */}
 
 
 
-<Grid item>
-<Grid item>
-<Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
-  <CardMedia
-    sx={{ padding:3, height: 140 }}
-    image={elearn}
-    title="E-learning platform"
-  />
-  <CardContent>
-    <Typography gutterBottom variant="h5" component="div">
-    E-learning platform
-    </Typography>
-    <Typography variant="body2" color="text.secondary">
-    An Online E-learning platform includes study materials,quizzes,dynamically adds a course by admin.Implemented by <b>MERN</b> Stack.
-    </Typography>
-  </CardContent>
-  <CardActions>
-    <Button size="small"><OpenInBrowserIcon/></Button>
-    <Button size="small"><GitHubIcon/></Button>
-  </CardActions>
-</Card>
-</Grid>             
-</Grid>
+
 
 
 
@@ -157,15 +136,14 @@ export default function MediaCard() {
   <CardMedia
     sx={{ padding:3, height: 140 }}
     image={c4}
-    title="E-learning platform"
+    title="Connecting 4 game"
   />
   <CardContent>
     <Typography gutterBottom variant="h5" component="div">
     Connecting 4 game
     </Typography>
     <Typography variant="body2" color="text.secondary">
-A connecting 4 game as a functionality of connecting the 4 circles at a same line, two player game, implemented by <b>React JS</b>.
-    </Typography>
+    A Connect Four game is implemented as a two-player game, where the objective is to connect four circles in a row. This functionality is implemented using <b>React JS</b>.    </Typography>
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
@@ -182,7 +160,7 @@ A connecting 4 game as a functionality of connecting the 4 circles at a same lin
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
     sx={{ padding:3, height: 140 }}
-    image={c4}
+    image={weather}
     title="Weather App"
   />
   <CardContent>
@@ -190,8 +168,7 @@ A connecting 4 game as a functionality of connecting the 4 circles at a same lin
 Weather App
     </Typography>
     <Typography variant="body2" color="text.secondary">
-A connecting 4 game as a functionality of connecting the 4 circles at a same line, two player game, implemented by <b>React JS</b>.
-    </Typography>
+    A weather app developed using <b>javaScript</b> to provide real-time weather information and forecasts. Users can check current conditions, and view extended forecasts for their location.    </Typography>
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
@@ -200,6 +177,84 @@ A connecting 4 game as a functionality of connecting the 4 circles at a same lin
 </Card>
 </Grid>   
  </Grid>
+
+
+
+
+ <Grid item>
+  {/* pro                     */}
+  <Grid item>
+<Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
+  <CardMedia
+    sx={{ padding:3, height: 140 }}
+    image={p}
+    title="portfolio"
+  />
+  <CardContent>
+    <Typography gutterBottom variant="h5" component="div">
+Portfolio
+    </Typography>
+    <Typography variant="body2" color="text.secondary">
+    Driven by the power of React JS, my portfolio not only reflects my technical expertise but also offers a user-friendly experience, embodying innovation and proficiency in web development.  </Typography>
+  </CardContent>
+  <CardActions>
+    <Button size="small"><OpenInBrowserIcon/></Button>
+    <Button size="small"><GitHubIcon/></Button>
+  </CardActions>
+</Card>
+</Grid>   
+ </Grid>
+
+
+
+ <Grid item>
+<Grid item>
+<Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
+  <CardMedia
+    sx={{ padding:3, height: 140 }}
+    image={elearn}
+    title="Water Quality Monitoring System"
+  />
+  <CardContent>
+    <Typography gutterBottom variant="h5" component="div">
+    Water Quality Monitoring System
+    </Typography>
+    <Typography variant="body2" color="text.secondary">
+    Implemented with ESP32, incorporating temperature, turbidity, and ultrasonic sensors. The system utilizes the Blynk app for convenient monitoring and visualization of water quality reports.    </Typography>
+  </CardContent>
+  <CardActions>
+    <Button size="small"><OpenInBrowserIcon/></Button>
+  </CardActions>
+</Card>
+</Grid>             
+</Grid>
+            <Grid item>
+  {/* pro                     */}
+  <Grid item>
+<Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
+  <CardMedia
+    sx={{ padding:3, height: 140 }}
+    image={c4}
+    title="Digital Lock Door System"
+  />
+  <CardContent>
+    <Typography gutterBottom variant="h5" component="div">
+    Digital Lock Door System
+    </Typography>
+    <Typography variant="body2" color="text.secondary">
+    Designed for seamless integration, the digital lock door system using ESP32 offers convenience and heightened security, making it an ideal solution for modern smart homes and businesses.  </Typography>
+  </CardContent>
+  <CardActions>
+    <Button size="small"><OpenInBrowserIcon/></Button>
+  </CardActions>
+</Card>
+</Grid>   
+ </Grid>
+
+
+
+
+ 
             <Grid item>            </Grid>
           </>
         )}
@@ -223,8 +278,7 @@ A connecting 4 game as a functionality of connecting the 4 circles at a same lin
     E-learning platform
     </Typography>
     <Typography variant="body2" color="text.secondary">
-    An Online E-learning platform includes study materials,quizzes,dynamically adds a course by admin.Implemented by <b>MERN</b> Stack.
-    </Typography>
+    An online e-learning platform includes study materials, quizzes, and the ability to dynamically add courses by the administrator. It is implemented using the <b>MERN</b> stack.    </Typography>
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
@@ -240,14 +294,14 @@ A connecting 4 game as a functionality of connecting the 4 circles at a same lin
   <CardMedia
     sx={{ padding:3, height: 140 }}
     image={c4}
-    title="E-learning platform"
+    title="Connecting 4 game"
   />
   <CardContent>
     <Typography gutterBottom variant="h5" component="div">
     Connecting 4 game
     </Typography>
     <Typography variant="body2" color="text.secondary">
-A connecting 4 game as a functionality of connecting the 4 circles at a same line, two player game, implemented by <b>React JS</b>.
+    A Connect Four game is implemented as a two-player game, where the objective is to connect four circles in a row. This functionality is implemented using <b>React JS</b>.    
     </Typography>
   </CardContent>
   <CardActions>
@@ -265,7 +319,7 @@ A connecting 4 game as a functionality of connecting the 4 circles at a same lin
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
     sx={{ padding:3, height: 140 }}
-    image={c4}
+    image={weather}
     title="Weather App"
   />
   <CardContent>
@@ -273,8 +327,7 @@ A connecting 4 game as a functionality of connecting the 4 circles at a same lin
 Weather App
     </Typography>
     <Typography variant="body2" color="text.secondary">
-A connecting 4 game as a functionality of connecting the 4 circles at a same line, two player game, implemented by <b>React JS</b>.
-    </Typography>
+    A weather app developed using <b>javascript</b> to provide real-time weather information and forecasts. Users can check current conditions, and view extended forecasts for their location.    </Typography>
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
@@ -283,6 +336,33 @@ A connecting 4 game as a functionality of connecting the 4 circles at a same lin
 </Card>
 </Grid>   
  </Grid>
+
+
+ <Grid item>
+  {/* pro                     */}
+  <Grid item>
+<Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
+  <CardMedia
+    sx={{ padding:3, height: 140 }}
+    image={p}
+    title="portfolio"
+  />
+  <CardContent>
+    <Typography gutterBottom variant="h5" component="div">
+Portfolio
+    </Typography>
+    <Typography variant="body2" color="text.secondary">
+    Driven by the power of React JS, my portfolio not only reflects my technical expertise but also offers a user-friendly experience, embodying innovation and proficiency in web development. </Typography>
+  </CardContent>
+  <CardActions>
+    <Button size="small"><OpenInBrowserIcon/></Button>
+    <Button size="small"><GitHubIcon/></Button>
+  </CardActions>
+</Card>
+</Grid>   
+ </Grid>
+
+
             <Grid item>            </Grid>
           </>
         )}
@@ -303,19 +383,17 @@ A connecting 4 game as a functionality of connecting the 4 circles at a same lin
   <CardMedia
     sx={{ padding:3, height: 140 }}
     image={elearn}
-    title="E-learning platform"
+    title="Water Quality Monitoring System"
   />
   <CardContent>
     <Typography gutterBottom variant="h5" component="div">
-    E-learning platform
+    Water Quality Monitoring System
     </Typography>
     <Typography variant="body2" color="text.secondary">
-    An Online E-learning platform includes study materials,quizzes,dynamically adds a course by admin.Implemented by <b>MERN</b> Stack.
-    </Typography>
+    Implemented with ESP32, incorporating temperature, turbidity, and ultrasonic sensors. The system utilizes the Blynk app for convenient monitoring and visualization of water quality reports.    </Typography>
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
-    <Button size="small"><GitHubIcon/></Button>
   </CardActions>
 </Card>
 </Grid>             
@@ -327,27 +405,24 @@ A connecting 4 game as a functionality of connecting the 4 circles at a same lin
   <CardMedia
     sx={{ padding:3, height: 140 }}
     image={c4}
-    title="E-learning platform"
+    title="Digital Lock Door System"
   />
   <CardContent>
     <Typography gutterBottom variant="h5" component="div">
-    Connecting 4 game
+    Digital Lock Door System
     </Typography>
     <Typography variant="body2" color="text.secondary">
-A connecting 4 game as a functionality of connecting the 4 circles at a same line, two player game, implemented by <b>React JS</b>.
-    </Typography>
+    Designed for seamless integration, the digital lock door system using ESP32 offers convenience and heightened security, making it an ideal solution for modern smart homes and businesses.  </Typography>
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
-    <Button size="small"><GitHubIcon/></Button>
   </CardActions>
 </Card>
 </Grid>   
  </Grid>
 
 
- <Grid item>
-  {/* pro                     */}
+ {/* <Grid item>
   <Grid item>
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
@@ -369,7 +444,7 @@ A connecting 4 game as a functionality of connecting the 4 circles at a same lin
   </CardActions>
 </Card>
 </Grid>   
- </Grid>
+ </Grid> */}
             <Grid item>            </Grid>
           </>
         )}

@@ -12,13 +12,10 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import Grid from '@mui/material/Grid';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import profileImage from './images/mentor3.jpg';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import SchoolIcon from '@mui/icons-material/School';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { Link } from 'react-router-dom';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 
 const bull = (
@@ -188,15 +185,18 @@ export default function About() {
           <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': { textDecorationThickness: '2px', textDecorationOffset: '4px' , color:'grey' } }} color="inherit">
             About
           </Button></Link>
+          <Link to="/skills" >
           <Button  startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {   color:'grey' } }} color="inherit">
             Skills
-          </Button>
+          </Button></Link>
+          <Link to="/projects" >
           <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />}  sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {  color:'grey' } }} color="inherit">
             Projects
-          </Button>
+          </Button></Link>
+          <Link to="/contact" >
           <Button startIcon={<PhoneIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', '&:hover': {  color:'grey' } }} color="inherit">
             Contact
-          </Button>
+          </Button></Link>
         </Toolbar>
       </AppBar>
 
