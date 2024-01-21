@@ -49,6 +49,35 @@ const Acheivement = (
 );
 
 
+
+
+const Acheivement1 = (
+  <React.Fragment >
+<CardContent sx={{ 
+      background: 'linear-gradient(45deg, #e6f7ff 30%, #fcd7e1 90%)', // Adjust the slightly lighter pink color code
+     
+}}>       
+      <Typography variant="body2" marginTop="2%" sx={{
+  fontFamily: 'Poppins, sans-serif',
+  fontWeight: '530', // 'semibold' is often equivalent to '600'
+  fontSize: '1.3rem', // Adjust the font size as needed (x1)
+}}>
+<PlayArrowIcon/> SKOLAR-Full Stack Web Development   <OpenInNewIcon/>
+        <br  />
+        <br />
+        <PlayArrowIcon/> Udemy-React JS   <OpenInNewIcon/>           
+      </Typography>
+    </CardContent>
+    {/* <CardActions>
+      <Button size="small">Learn More</Button>
+    </CardActions> */}
+  </React.Fragment>
+);
+
+
+
+
+
 const Experiences = (
   <React.Fragment >
 <CardContent sx={{ 
@@ -60,21 +89,37 @@ const Experiences = (
   fontWeight: '500', // 'semibold' is often equivalent to '600'
   fontSize: '1.3rem', // Adjust the font size as needed (x1)
 }}>
- <b><h3>Web Development Intern</h3></b>
- <p>TechnoHacks EduTech Official - Internship</p>
+ <b><h3>Full Stack Web Development Intern</h3></b>
+ <p>SKOLAR - Internship</p>
  <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom sx={{
               fontFamily: 'Poppins, sans-serif',
               fontWeight: '500',
               fontSize: '1.1rem',
             }}>
-Dec 2023 - 1 mon
-<br/>
+October 2023 to 30 December 2023 - 3 months<br/>
 Remote
             </Typography>
             <Typography>
-            Completed a dynamic [duration] internship in [industry], excelling in roles such as [specific responsibilities]. Achieved notable milestones, including [mention achievements], and developed strong skills in [list key skills]. Grateful for mentorship, excited to leverage gained experience in future endeavors.
-            <br/>
-            <p> <b>Skills : </b>Front-End Development</p>
+            Completed a dynamic 3 months internship in SKOLAR, excelling in roles such as:
+          <ul>
+          <li>Collaborated with the development team to design and implement responsive user interfaces using HTML, CSS, and JavaScript.</li>
+            <li>Assisted in the integration of back-end functionalities using Node.js, Express, and MongoDB.</li>
+            <li>Conducted thorough testing, identified and fixed bugs, resulting in a 20% improvement in application performance.</li>          </ul>
+          Achieved notable milestones, including:
+          <ul>
+          <li>Successfully delivered a fully functional e-commerce website, meeting project deadlines and exceeding client expectations.</li>
+            <li>Implemented a real-time chat feature, enhancing user engagement and interaction on the platform.</li>          </ul>
+          Developed strong skills in : <b>HTML, CSS, javaScript, MongoDB, React.js, Node.js, Express.js</b> 
+          <ul>
+          <li>Full-stack web development, including proficiency in MERN stack technologies.</li>
+            <li>Problem-solving and debugging, ensuring smooth and error-free application functionality.</li>          </ul>
+          Grateful for mentorship, excited to leverage gained experience in future endeavors.
+          <br />
+            
+            <p> Skills : <b>Full Stack Web Development</b></p>
+            {/* <p><b>Final Project : <h3>Login and signup page using React.js and Node.js</h3></b></p> */}
+            <p> Final Project : <b>Login and signup page using React.js and Node.js</b></p>
+
             </Typography>
 
       </Typography>
@@ -168,7 +213,7 @@ export default function SimplePaper() {
     </Box>
 
 
-    <Typography variant="h3" sx={{ marginBottom: '1rem' ,display:'flex',justifyContent:'center',alignItems:"center",marginTop:'5%',marginBottom:'4%'}}><b>Certifications</b></Typography>
+    <Typography variant="h3" sx={{ marginBottom: '1rem' ,display:'flex',justifyContent:'center',alignItems:"center",marginTop:'4%',marginBottom:'4%'}}><b>Certifications</b></Typography>
     
 
     <Box sx={{ marginTop: 5, padding: 4 }}>
@@ -183,14 +228,14 @@ export default function SimplePaper() {
           <Grid item xs={12} md={6}>
           
             <Box sx={{ minWidth: 275 ,marginLeft:"5%",paddingRight:"7%"}}>
-      <Card variant="outlined">{Acheivement}</Card>
+      <Card variant="outlined">{Acheivement1}</Card>
     </Box> 
    </Grid>
         </Grid>
         
       </Box>
 
-      <Typography variant="h3" sx={{ marginBottom: '1rem' ,display:'flex',justifyContent:'center',alignItems:"center",marginTop:'5%',marginBottom:'4%'}}><b>Experiences</b></Typography>
+      <Typography variant="h3" sx={{ marginBottom: '1rem' ,display:'flex',justifyContent:'center',alignItems:"center",marginTop:'4%',marginBottom:'4%'}}><b>Experiences</b></Typography>
       <Box sx={{ minWidth: 275 ,marginLeft:"7%",marginRight:"7%"}}>
       <Card variant="outlined">{Experiences}</Card>
     </Box>

@@ -15,6 +15,8 @@ import elearn from  './images/elearnpic.jpg';
 import p from  './images/portfolio.jpg';
 import weather from  './images/weatherapp.jpg';
 import c4 from  './images/c4game.jpg';
+import water from  './images/water.jpg';
+import lock from  './images/lock.jpg';
 import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from 'react-router-dom';
@@ -212,7 +214,7 @@ Portfolio
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
     sx={{ padding:3, height: 140 }}
-    image={elearn}
+    image={water}
     title="Water Quality Monitoring System"
   />
   <CardContent>
@@ -234,7 +236,7 @@ Portfolio
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
     sx={{ padding:3, height: 140 }}
-    image={c4}
+    image={lock}
     title="Digital Lock Door System"
   />
   <CardContent>
@@ -382,7 +384,7 @@ Portfolio
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
     sx={{ padding:3, height: 140 }}
-    image={elearn}
+    image={water}
     title="Water Quality Monitoring System"
   />
   <CardContent>
@@ -404,7 +406,7 @@ Portfolio
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
     sx={{ padding:3, height: 140 }}
-    image={c4}
+    image={lock}
     title="Digital Lock Door System"
   />
   <CardContent>

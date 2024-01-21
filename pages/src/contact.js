@@ -7,18 +7,21 @@ import StarIcon from '@mui/icons-material/Star'; // Replace with your desired ic
 import EmailIcon from '@mui/icons-material/Email';
 import email from './images/email.jpg';
 import MobileFriendlyIcon from '@mui/icons-material/MobileFriendly';
-
 import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import WidgetsIcon from '@mui/icons-material/Widgets';
 import PhoneIcon from '@mui/icons-material/Phone';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 export default function SimplePaper1() {
   return (
     <>
 <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'black', fontFamily: '"Poppins", sans-serif' ,display:"flex",justifyContent:"center",marginTop:"4%",marginBottom:"3%"}}>
-            <b>Take a Coffee & Chat with me </b>
+            <b>Take a Cappuccino & Chat with me </b>
+            
           </Typography>
 
     <Box
@@ -171,8 +174,16 @@ export default function SimplePaper1() {
       </Button>
       <Grid marginLeft="46.3%" marginTop="7%">
 <Typography >copyright </Typography>
+<Grid  marginTop="4%" marginLeft="-1%">
+<Link to='/' style={{ textDecoration: 'none', color: 'black' }}>
+      <HomeIcon style={{ fontSize: '1.7rem' }} />
+    </Link>
+{<LinkedInIcon sx={{ fontSize: '1.7rem'}} />}       
+{<GitHubIcon sx={{ fontSize: '1.7rem'}} />}    
+</Grid>
 
       </Grid>
+      
     </>
 
   );

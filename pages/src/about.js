@@ -120,7 +120,7 @@ CGPA - 8.04
             }}>
               2019-2020
               <br />
-              percentage - 90%
+              percentage - 89.4%
             </Typography>
           </div>
         </CardContent>
