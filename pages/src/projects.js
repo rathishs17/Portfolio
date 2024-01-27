@@ -30,25 +30,46 @@ export default function MediaCard() {
   return (
 <>
 
-<AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' }}>
+<AppBar position="fixed" sx={{ background: 'transparent', boxShadow: 'none' , backdropFilter: 'blur(7px)'}}>
         <Toolbar>
           <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'black', fontFamily: '"Poppins", sans-serif' }}>
             <b>Rathish</b>
           </Typography>
           <Link to="/" >
-          <Button startIcon={<HomeIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {color:'grey' } }} color="inherit">
+          {/* <Button startIcon={<HomeIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {color:'grey' } }} color="inherit">
             Home
-          </Button></Link>
+          </Button> */}
+          <Button
+  sx={{
+    textTransform: 'none',
+    color: 'black',
+    fontSize: '1.5rem',
+    marginRight: 2,
+    transition: 'color 0.3s ease-in-out, transform 0.3s ease-in-out', // Add transition for scaling
+    '&:hover': {
+      color: 'grey',
+         // Scale up on hover
+    },
+  }}
+  color="inherit"
+>
+    {<HomeIcon sx={{ fontSize: '1.5rem' }} />}
+
+  Home
+</Button>
+
+          </Link>
           <Link to="/about" >
-          <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': { textDecorationThickness: '2px', textDecorationOffset: '4px' , color:'grey' } }} color="inherit">
+          <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': { textDecorationThickness: '2px', textDecorationOffset: '4px' , color:'grey' ,          
+} }} color="inherit">
             About
           </Button></Link>
           <Link to="/skills" >
-          <Button  startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {   color:'grey' } }} color="inherit">
+          <Button  startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {   color:'grey', } }} color="inherit">
             Skills
           </Button></Link>
           <Link to="/projects" >
-          <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />}  sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {  color:'grey' } }} color="inherit">
+          <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />}  sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {  color:'grey' ,} }} color="inherit">
             Projects
           </Button></Link>
           <Link to="/contact" >

@@ -49,21 +49,31 @@ export default function Home() {
  
       <Box sx={{ marginTop: 10, padding: 4 }}>
         <Grid container spacing={3}>
-          {/* Left Column (Image) */}
           <Grid item xs={12} md={6} textAlign="center" marginTop="8%">
             <img src={profileImage} alt="Profile" style={{ width: '50%', height: 'auto', borderRadius: 8 , animation: 'float 3s infinite'}} />
           </Grid>
 
-          {/* Right Column (Text) */}
+
+
+
+
+
+
+
+
+
+
+
+
           <Grid item xs={12} md={6}>
             <Typography variant="h6" sx={{ color :"grey", fontFamily: '"Poppins", sans-serif', textAlign: 'center' ,marginTop:'19%'}}>
-              <h4><b color='grey'>Hello, I'm</b></h4> {/* Replace with your actual text */}
+              <h4><b color='grey'>Hello, I'm</b></h4> 
             </Typography>
             <Typography variant="h5" sx={{ fontFamily: '"Poppins", sans-serif', textAlign: 'center' , marginTop: '-4%'}}>
-              <h1><b color='grey'>Rathish</b></h1> {/* Replace with your actual text */}
+              <h1><b color='grey'>Rathish</b></h1> 
             </Typography>
             <Typography variant="h5" sx={{ color:'grey',fontFamily: '"Poppins", sans-serif', textAlign: 'center', marginTop: '-4%' }}>
-              <h2><b >Frontend Developer</b></h2> {/* Replace with your actual text */}
+              <h2><b >Frontend Developer</b></h2> 
             </Typography>
 <Typography  textAlign="center"><Button color="secondary" variant='outlined' sx={{ border: '1px solid black' , color: 'black',borderRadius:'13px' }}>Download CV</Button></Typography>
 {<LinkedInIcon sx={{ fontSize: '2.3rem',marginTop:'6.5%',marginLeft:"43%" }} />}       
@@ -78,3 +88,5 @@ export default function Home() {
 
   );
 }
+
+
