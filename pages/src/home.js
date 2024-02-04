@@ -10,6 +10,8 @@ import WidgetsIcon from '@mui/icons-material/Widgets';
 import PhoneIcon from '@mui/icons-material/Phone';
 import Grid from '@mui/material/Grid';
 import profileImage from './images/mentor3.jpg';
+import me from './images/rathishpic.png';
+
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from 'react-router-dom';
@@ -49,8 +51,8 @@ export default function Home() {
  
       <Box sx={{ marginTop: 10, padding: 4 }}>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={6} textAlign="center" marginTop="8%">
-            <img src={profileImage} alt="Profile" style={{ width: '50%', height: 'auto', borderRadius: 8 , animation: 'float 3s infinite'}} />
+          <Grid item xs={12} md={6} textAlign="center" marginTop="3%">
+            <img src={me} alt="Profile" style={{ width: '70%', height: 'auto', borderRadius: 8 , animation: 'float 3s infinite'}} />
           </Grid>
 
 
@@ -73,9 +75,18 @@ export default function Home() {
               <h1><b color='grey'>Rathish</b></h1> 
             </Typography>
             <Typography variant="h5" sx={{ color:'grey',fontFamily: '"Poppins", sans-serif', textAlign: 'center', marginTop: '-4%' }}>
-              <h2><b >Frontend Developer</b></h2> 
+              <h2><b >MERN Stack Developer</b></h2> 
             </Typography>
-<Typography  textAlign="center"><Button color="secondary" variant='outlined' sx={{ border: '1px solid black' , color: 'black',borderRadius:'13px' }}>Download CV</Button></Typography>
+
+{/* <a href='Skolar - Internship Completion Certificate _ RATHISH S.pdf'><Typography  textAlign="center"><Button color="secondary" variant='outlined' sx={{ border: '1px solid black' , color: 'black',borderRadius:'13px' }}>Download CV</Button></Typography></a> */}
+<a href='certificate.pdf' download>
+  <Typography textAlign="center">
+    <Button color="secondary" variant='outlined' sx={{ border: '1px solid black', color: 'black', borderRadius: '13px' }}>
+      Download CV
+    </Button>
+  </Typography>
+</a>
+
 {<LinkedInIcon sx={{ fontSize: '2.3rem',marginTop:'6.5%',marginLeft:"43%" }} />}       
 {<GitHubIcon sx={{ fontSize: '2.3rem', marginLeft:'4%'}} />}    </Grid>
 

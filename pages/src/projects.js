@@ -30,7 +30,7 @@ export default function MediaCard() {
   return (
 <>
 
-<AppBar position="fixed" sx={{ background: 'transparent', boxShadow: 'none' , backdropFilter: 'blur(7px)'}}>
+<AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' , backdropFilter: 'blur(7px)'}}>
         <Toolbar>
           <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'black', fontFamily: '"Poppins", sans-serif' }}>
             <b>Rathish</b>

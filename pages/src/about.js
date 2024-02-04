@@ -11,7 +11,13 @@ import WidgetsIcon from '@mui/icons-material/Widgets';
 import PhoneIcon from '@mui/icons-material/Phone';
 import Grid from '@mui/material/Grid';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import profileImage from './images/mentor3.jpg';
+import profileImage1 from './images/mentor3.jpg';
+import profileImage from './images/rathishai.jpg';
+import achieves from './images/acheive.jpg';
+
+import redu from './images/rathishedu.jpg';
+
+
 import SchoolIcon from '@mui/icons-material/School';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { Link } from 'react-router-dom';
@@ -42,7 +48,11 @@ const bull = (
 <PlayArrowIcon/> 2nd prize in Circuit Debugging at Akshaya College of Engineering   <OpenInNewIcon/>
           <br  />
           <br />
-          <PlayArrowIcon/> Participated in Accenture Innovation Challenge 2023   <OpenInNewIcon/>           
+          <PlayArrowIcon/> Participated in Accenture Innovation Challenge 2023   <OpenInNewIcon/>  
+          <br  />
+          <br />       
+          <PlayArrowIcon/> Participated in <b>SOCIO-TECH HACKATHON-2024 </b> organized by   KPRCAS  <OpenInNewIcon/>           
+  
         </Typography>
       </CardContent>
       {/* <CardActions>
@@ -204,7 +214,7 @@ export default function About() {
       <Box sx={{ marginTop: 10, padding: 4 }}>
         <Grid container spacing={3}>
           {/* Left Column (Image) */}
-          <Grid item xs={12} md={6} textAlign="center" marginTop="8%">
+          <Grid item xs={12} md={6} textAlign="center" marginTop="2.3%">
             <img src={profileImage} alt="Profile" style={{ width: '50%', height: 'auto', borderRadius: 8 , animation: 'float 3s infinite'}} />
           </Grid>
 
@@ -263,18 +273,18 @@ export default function About() {
 
           {/* Right Column (Text) */}
           <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ fontFamily: '"Poppins", sans-serif', textAlign: 'center' , marginTop: '-4%'}}>
+          <Typography variant="h5" sx={{ fontFamily: '"Poppins", sans-serif', textAlign: 'center' , marginTop: '-12%'}}>
               <h1><b color='grey'>Education</b></h1> {/* Replace with your actual text */}
             </Typography>
             <Box sx={{ minWidth: 275 ,marginLeft:"5%"}}>
       <Card variant="outlined">{card}</Card>
     </Box>
 
-    <Box sx={{ minWidth: 275 ,marginLeft:"5%",marginTop:"5%"}}>
+    <Box sx={{ minWidth: 275 ,marginLeft:"5%",marginTop:"3%"}}>
       <Card variant="outlined">{card3}</Card>
     </Box>
 
-    <Box sx={{ minWidth: 275 ,marginLeft:"5%",marginTop:"5%"}}>
+    <Box sx={{ minWidth: 275 ,marginLeft:"5%",marginTop:"3%"}}>
       <Card variant="outlined">{card2}</Card>
     </Box>
 
@@ -283,7 +293,7 @@ export default function About() {
                </Grid>
 
                <Grid item xs={12} md={6} textAlign="center" marginTop="8%">
-            <img src={profileImage} alt="Profile" style={{ width: '50%', height: 'auto', borderRadius: 8 , animation: 'float 3s infinite'}} />
+            <img src={redu} alt="Profile" style={{ width: '50%', height: 'auto', borderRadius: 8 , animation: 'float 3s infinite'}} />
           </Grid>
 
         </Grid>
@@ -300,12 +310,12 @@ export default function About() {
         <Grid container spacing={3}>
           {/* Left Column (Image) */}
           <Grid item xs={12} md={6} textAlign="center" marginTop="8%">
-            <img src={profileImage} alt="Profile" style={{ width: '50%', height: 'auto', borderRadius: 8 , animation: 'float 3s infinite'}} />
+            <img src={achieves} alt="Profile" style={{ width: '50%', height: 'auto', borderRadius: 8 , animation: 'float 3s infinite'}} />
           </Grid>
 
           {/* Right Column (Text) */}
           <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ fontFamily: '"Poppins", sans-serif', textAlign: 'center' , marginTop: '-4%'}}>
+          <Typography variant="h5" sx={{ fontFamily: '"Poppins", sans-serif', textAlign: 'center' , marginTop: '-6%'}}>
               <h1><b color='grey'>Acheivements</b></h1> {/* Replace with your actual text */}
             </Typography>
             <Box sx={{ minWidth: 275 ,marginLeft:"5%"}}>
