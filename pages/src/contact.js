@@ -316,8 +316,13 @@ export default function SimplePaper1() {
 <Link to='/' style={{ textDecoration: 'none', color: 'black' }}>
       <HomeIcon style={{ fontSize: '1.7rem' }} />
     </Link>
-{<LinkedInIcon sx={{ fontSize: '1.7rem'}} />}       
-{<GitHubIcon sx={{ fontSize: '1.7rem'}} />}    
+<a href="https://www.linkedin.com/in/rathish-s-301b28269
+" target="_blank" rel="noopener noreferrer">
+  <LinkedInIcon sx={{ fontSize: '1.7rem', }} />
+</a>
+<a href="https://github.com/rathishs17" target="_blank" rel="noopener noreferrer">
+  <GitHubIcon sx={{ fontSize: '1.7rem',  }} />
+</a>   
 </Grid>
 
       </Grid>
