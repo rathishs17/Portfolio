@@ -112,7 +112,10 @@ export default function MediaCard() {
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
-    <Button size="small"><GitHubIcon/></Button>
+    <Button size="small"><a href=" https://github.com/rathishs17/E-learning-website
+" target="_blank" rel="noopener noreferrer">
+          <GitHubIcon  />
+        </a></Button>
   </CardActions>
 </Card>
 </Grid>             
@@ -170,11 +173,14 @@ export default function MediaCard() {
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
-    <Button size="small"><GitHubIcon/></Button>
+    <Button size="small"><a href=" https://github.com/rathishs17/connectinggame4" target="_blank" rel="noopener noreferrer">
+          <GitHubIcon  />
+        </a> </Button>
   </CardActions>
 </Card>
 </Grid>   
  </Grid>
+
 
 
  <Grid item>
@@ -195,7 +201,10 @@ Weather App
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
-    <Button size="small"><GitHubIcon/></Button>
+    <Button size="small">
+    <a href="https://github.com/rathishs17/weatherapp" target="_blank" rel="noopener noreferrer">
+          <GitHubIcon  />
+        </a>    </Button>
   </CardActions>
 </Card>
 </Grid>   
@@ -218,16 +227,17 @@ Weather App
 Portfolio
     </Typography>
     <Typography variant="body2" color="text.secondary">
-    Driven by the power of React JS, my portfolio not only reflects my technical expertise but also offers a user-friendly experience, embodying innovation and proficiency in web development.  </Typography>
+    Driven by the power of <b>ReactJS</b>, my portfolio not only reflects my technical expertise but also offers a user-friendly experience, embodying innovation and proficiency in web development.  </Typography>
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
-    <Button size="small"><GitHubIcon/></Button>
+    <Button size="small"><a href=" https://github.com/rathishs17/portfolio" target="_blank" rel="noopener noreferrer">
+          <GitHubIcon  />
+        </a>  </Button>
   </CardActions>
 </Card>
 </Grid>   
  </Grid>
-
 
 
  <Grid item>
@@ -246,7 +256,7 @@ Portfolio
     Implemented with ESP32, incorporating temperature, turbidity, and ultrasonic sensors. The system utilizes the Blynk app for convenient monitoring and visualization of water quality reports.    </Typography>
   </CardContent>
   <CardActions>
-    <Button size="small"><OpenInBrowserIcon/></Button>
+    {/* <Button size="small"><OpenInBrowserIcon/></Button> */}
   </CardActions>
 </Card>
 </Grid>             
@@ -268,7 +278,7 @@ Portfolio
     Designed for seamless integration, the digital lock door system using ESP32 offers convenience and heightened security, making it an ideal solution for modern smart homes and businesses.  </Typography>
   </CardContent>
   <CardActions>
-    <Button size="small"><OpenInBrowserIcon/></Button>
+    {/* <Button size="small"><OpenInBrowserIcon/></Button> */}
   </CardActions>
 </Card>
 </Grid>   
@@ -281,7 +291,6 @@ Portfolio
             <Grid item>            </Grid>
           </>
         )}
-
 
 
 
@@ -305,7 +314,10 @@ Portfolio
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
-    <Button size="small"><GitHubIcon/></Button>
+    <Button size="small"><a href=" https://github.com/rathishs17/E-learning-website
+" target="_blank" rel="noopener noreferrer">
+          <GitHubIcon  />
+        </a> </Button>
   </CardActions>
 </Card>
 </Grid>             
@@ -329,7 +341,9 @@ Portfolio
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
-    <Button size="small"><GitHubIcon/></Button>
+    <Button size="small"><a href=" https://github.com/rathishs17/connectinggame4" target="_blank" rel="noopener noreferrer">
+          <GitHubIcon  />
+        </a> </Button>
   </CardActions>
 </Card>
 </Grid>   
@@ -354,7 +368,9 @@ Weather App
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
-    <Button size="small"><GitHubIcon/></Button>
+    <Button size="small"><a href="https://github.com/rathishs17/weatherapp" target="_blank" rel="noopener noreferrer">
+          <GitHubIcon  />
+        </a></Button>
   </CardActions>
 </Card>
 </Grid>   
@@ -375,7 +391,7 @@ Weather App
 Portfolio
     </Typography>
     <Typography variant="body2" color="text.secondary">
-    Driven by the power of React JS, my portfolio not only reflects my technical expertise but also offers a user-friendly experience, embodying innovation and proficiency in web development. </Typography>
+    Driven by the power of <b>ReactJS</b>, my portfolio not only reflects my technical expertise but also offers a user-friendly experience, embodying innovation and proficiency in web development. </Typography>
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
@@ -416,7 +432,7 @@ Portfolio
     Implemented with ESP32, incorporating temperature, turbidity, and ultrasonic sensors. The system utilizes the Blynk app for convenient monitoring and visualization of water quality reports.    </Typography>
   </CardContent>
   <CardActions>
-    <Button size="small"><OpenInBrowserIcon/></Button>
+    {/* <Button size="small"><OpenInBrowserIcon/></Button> */}
   </CardActions>
 </Card>
 </Grid>             
@@ -438,7 +454,7 @@ Portfolio
     Designed for seamless integration, the digital lock door system using ESP32 offers convenience and heightened security, making it an ideal solution for modern smart homes and businesses.  </Typography>
   </CardContent>
   <CardActions>
-    <Button size="small"><OpenInBrowserIcon/></Button>
+    {/* <Button size="small"><OpenInBrowserIcon/></Button> */}
   </CardActions>
 </Card>
 </Grid>   

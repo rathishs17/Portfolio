@@ -36,10 +36,16 @@ const Acheivement = (
   fontWeight: '530', // 'semibold' is often equivalent to '600'
   fontSize: '1.3rem', // Adjust the font size as needed (x1)
 }}>
-<PlayArrowIcon/> Internshala Trainings-Web Development-jun 2023   <OpenInNewIcon/>
+<PlayArrowIcon/> Internshala Trainings-Web Development-jun 2023   
+<a href="https://drive.google.com/file/d/1xwRQkCUgdlctFl7E0uuVifi4UvPnP1bd/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <OpenInNewIcon  />
+        </a>
         <br  />
         <br />
-        <PlayArrowIcon/> Internshala Trainings-Core Java-july 2023    <OpenInNewIcon/>           
+        <PlayArrowIcon/> Internshala Trainings-Core Java-july 2023   
+        <a href="https://drive.google.com/file/d/1JQzUJR-eh5r9vK4hA7twQ1KQawELzKTv/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <OpenInNewIcon  />
+        </a>         
       </Typography>
     </CardContent>
     {/* <CardActions>
@@ -47,9 +53,6 @@ const Acheivement = (
     </CardActions> */}
   </React.Fragment>
 );
-
-
-
 
 const Acheivement1 = (
   <React.Fragment >
@@ -62,10 +65,16 @@ const Acheivement1 = (
   fontWeight: '530', // 'semibold' is often equivalent to '600'
   fontSize: '1.3rem', // Adjust the font size as needed (x1)
 }}>
-<PlayArrowIcon/> SKOLAR-Full Stack Web Development   <OpenInNewIcon/>
+<PlayArrowIcon/> SKOLAR-Full Stack Web Development   
+<a href="https://drive.google.com/file/d/1pt_yq6SoO_cGwEk-8lpzRtNno3PGxa4I/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <OpenInNewIcon  />
+        </a>
         <br  />
         <br />
-        <PlayArrowIcon/> Udemy-React JS   <OpenInNewIcon/>           
+        <PlayArrowIcon/> Udemy-React JS   
+        <a href="https://drive.google.com/file/d/1O-cmjV_SzFvjfxaCUtTBe-Lf_t43irHc/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <OpenInNewIcon  />
+        </a>    
       </Typography>
     </CardContent>
     {/* <CardActions>
