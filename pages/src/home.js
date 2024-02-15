@@ -79,7 +79,7 @@ export default function Home() {
             </Typography>
 
 {/* <a href='Skolar - Internship Completion Certificate _ RATHISH S.pdf'><Typography  textAlign="center"><Button color="secondary" variant='outlined' sx={{ border: '1px solid black' , color: 'black',borderRadius:'13px' }}>Download CV</Button></Typography></a> */}
-<a href='certificate.pdf' download>
+<a href='https://drive.google.com/file/d/18e1lGIA2DN_sm6EkcatZpuGqS3If8I3u/view?usp=sharing'>
   <Typography textAlign="center">
     <Button color="secondary" variant='outlined' sx={{ border: '1px solid black', color: 'black', borderRadius: '13px' }}>
       VIEW CV
