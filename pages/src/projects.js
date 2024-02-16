@@ -85,7 +85,7 @@ export default function MediaCard() {
 
      
       <Tabs value={tabValue} onChange={handleTabChange} centered  >
-        <Tab label="ALL" />
+        {/* <Tab label="WEB" /> */}
         <Tab label="WEB" />
         <Tab label="CORE" />
 
@@ -93,7 +93,7 @@ export default function MediaCard() {
 
      
       <Grid container spacing={5} display="flex" justifyContent="center" marginTop="4%">
-        {tabValue === 0 && (
+        {tabValue === 3 && (
           <>
             <Grid item>
 <Grid item>
@@ -230,7 +230,7 @@ Portfolio
     Driven by the power of <b>ReactJS</b>, my portfolio not only reflects my technical expertise but also offers a user-friendly experience, embodying innovation and proficiency in web development.  </Typography>
   </CardContent>
   <CardActions>
-    <Button size="small"><OpenInBrowserIcon/></Button>
+    {/* <Button size="small"><OpenInBrowserIcon/></Button> */}
     <Button size="small"><a href=" https://github.com/rathishs17/portfolio" target="_blank" rel="noopener noreferrer">
           <GitHubIcon  />
         </a>  </Button>
@@ -295,7 +295,7 @@ Portfolio
 
 
 
-{tabValue === 1 && (
+{tabValue === 0 && (
           <>
             <Grid item>
 <Grid item>
@@ -314,10 +314,13 @@ Portfolio
   </CardContent>
   <CardActions>
     <Button size="small"><OpenInBrowserIcon/></Button>
-    <Button size="small"><a href=" https://github.com/rathishs17/E-learning-website
-" target="_blank" rel="noopener noreferrer">
+    <Button size="small">          <GitHubIcon  />
+</Button>
+
+    {/* <Button size="small"><a href=" " target="_blank" rel="noopener noreferrer">
+      //https://github.com/rathishs17/E-learning-website
           <GitHubIcon  />
-        </a> </Button>
+        </a> </Button> */}
   </CardActions>
 </Card>
 </Grid>             
@@ -340,7 +343,12 @@ Portfolio
     </Typography>
   </CardContent>
   <CardActions>
-    <Button size="small"><OpenInBrowserIcon/></Button>
+
+    <Button size="small"><a href=" https://connectingfourgame-rathish.netlify.app
+
+" target="_blank" rel="noopener noreferrer">
+          <OpenInBrowserIcon />
+        </a> </Button>
     <Button size="small"><a href=" https://github.com/rathishs17/connectinggame4" target="_blank" rel="noopener noreferrer">
           <GitHubIcon  />
         </a> </Button>
@@ -367,7 +375,11 @@ Weather App
     A weather app developed using <b>javascript</b> to provide real-time weather information and forecasts. Users can check current conditions, and view extended forecasts for their location.    </Typography>
   </CardContent>
   <CardActions>
-    <Button size="small"><OpenInBrowserIcon/></Button>
+    <Button size="small"><a href=" https://weatherapp-rathish.netlify.app
+
+" target="_blank" rel="noopener noreferrer">
+          <OpenInBrowserIcon />
+        </a> </Button>
     <Button size="small"><a href="https://github.com/rathishs17/weatherapp" target="_blank" rel="noopener noreferrer">
           <GitHubIcon  />
         </a></Button>
@@ -394,7 +406,7 @@ Portfolio
     Driven by the power of <b>ReactJS</b>, my portfolio not only reflects my technical expertise but also offers a user-friendly experience, embodying innovation and proficiency in web development. </Typography>
   </CardContent>
   <CardActions>
-    <Button size="small"><OpenInBrowserIcon/></Button>
+    {/* <Button size="small"><OpenInBrowserIcon/></Button> */}
     <Button size="small"><GitHubIcon/></Button>
   </CardActions>
 </Card>
@@ -414,7 +426,7 @@ Portfolio
 
 
 
-{tabValue === 2 && (
+{tabValue === 1 && (
           <>
             <Grid item>
 <Grid item>

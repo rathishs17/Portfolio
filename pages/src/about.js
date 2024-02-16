@@ -45,13 +45,14 @@ const bull = (
     fontWeight: '530', // 'semibold' is often equivalent to '600'
     fontSize: '1.3rem', // Adjust the font size as needed (x1)
   }}>
-<PlayArrowIcon/> 2nd prize in Circuit Debugging at Akshaya College of Engineering   <OpenInNewIcon/>
+<PlayArrowIcon/> 2nd prize in Circuit Debugging at Akshaya College of Engineering   
+{/* <OpenInNewIcon/> */}
           <br  />
           <br />
-          <PlayArrowIcon/> Participated in Accenture Innovation Challenge 2023   <OpenInNewIcon/>  
+          <PlayArrowIcon/> Participated in Accenture Innovation Challenge 2023   
           <br  />
           <br />       
-          <PlayArrowIcon/> Participated in <b>SOCIO-TECH HACKATHON-2024 </b> organized by   KPRCAS  <OpenInNewIcon/>           
+          <PlayArrowIcon/> Participated in SOCIO-TECH HACKATHON-2024  organized by   KPRCAS           
   
         </Typography>
       </CardContent>
