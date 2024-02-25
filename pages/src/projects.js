@@ -264,10 +264,11 @@ Portfolio
     Driven by the power of <b>ReactJS</b>, my portfolio not only reflects my technical expertise but also offers a user-friendly experience, embodying innovation and proficiency in web development.  </Typography>
   </CardContent>
   <CardActions>
-    {/* <Button size="small"><OpenInBrowserIcon/></Button> */}
-    <Button size="small"><a href=" https://github.com/rathishs17/portfolio" target="_blank" rel="noopener noreferrer">
+    <Button size="small"><OpenInBrowserIcon/></Button>
+    <Button size="small"><a href=" https://github.com/rathishs17/E-learning-website
+" target="_blank" rel="noopener noreferrer">
           <GitHubIcon  />
-        </a>  </Button>
+        </a></Button>
   </CardActions>
 </Card>
 </Grid>   
@@ -347,14 +348,14 @@ Portfolio
     An online e-learning platform includes study materials, quizzes, and the ability to dynamically add courses by the administrator. It is implemented using the <b>MERN</b> stack.    </Typography>
   </CardContent>
   <CardActions>
-    <Button size="small"><OpenInBrowserIcon/></Button>
-    <Button size="small">          <GitHubIcon  />
-</Button>
+    <Button size="small"><a href=" https://rathish-e-learning-platform.netlify.app/
 
-    {/* <Button size="small"><a href=" " target="_blank" rel="noopener noreferrer">
-      //https://github.com/rathishs17/E-learning-website
+" target="_blank" rel="noopener noreferrer">
+          <OpenInBrowserIcon />
+        </a> </Button>
+    <Button size="small"><a href="https://github.com/rathishs17/E-learning-website" target="_blank" rel="noopener noreferrer">
           <GitHubIcon  />
-        </a> </Button> */}
+        </a></Button>
   </CardActions>
 </Card>
 </Grid>             
@@ -440,8 +441,9 @@ Portfolio
     Driven by the power of <b>ReactJS</b>, my portfolio not only reflects my technical expertise but also offers a user-friendly experience, embodying innovation and proficiency in web development. </Typography>
   </CardContent>
   <CardActions>
-    {/* <Button size="small"><OpenInBrowserIcon/></Button> */}
-    <Button size="small"><GitHubIcon/></Button>
+    <Button size="small"><a href=" https://github.com/rathishs17/portfolio" target="_blank" rel="noopener noreferrer">
+          <GitHubIcon  />
+        </a></Button>
   </CardActions>
 </Card>
 </Grid>   
@@ -497,7 +499,7 @@ Portfolio
     Digital Lock Door System
     </Typography>
     <Typography variant="body2" color="text.secondary">
-    Designed for seamless integration, the digital lock door system using ESP32 offers convenience and heightened security, making it an ideal solution for modern smart homes and businesses.  </Typography>
+    Designed for seamless integration, the digital lock door system using ESP32 controller offers convenience and heightened security, making it an ideal solution for modern smart homes and businesses.  </Typography>
   </CardContent>
   <CardActions>
     {/* <Button size="small"><OpenInBrowserIcon/></Button> */}
