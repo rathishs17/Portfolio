@@ -17,7 +17,11 @@ import achieves from './images/acheive.jpg';
 
 import redu from './images/rathishedu.jpg';
 
-
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import Drawer from '@mui/material/Drawer';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 import SchoolIcon from '@mui/icons-material/School';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { Link } from 'react-router-dom';
@@ -180,36 +184,84 @@ CGPA - 8.04
   
 
 export default function About() {
+
+  const [openDrawer, setOpenDrawer] = React.useState(false);
+
+  const toggleDrawer = () => {
+    setOpenDrawer(!openDrawer);
+  };
+
   return (
     <>
-    <Box sx={{ flexGrow: 3 } }>
-      <AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' }}>
-        <Toolbar>
-          <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'black', fontFamily: '"Poppins", sans-serif' }}>
-            <b>Rathish</b>
-          </Typography>
-          <Link to="/" >
-          <Button startIcon={<HomeIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {color:'grey' } }} color="inherit">
-            Home
-          </Button></Link>
-          <Link to="/about" >
-          <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': { textDecorationThickness: '2px', textDecorationOffset: '4px' , color:'grey' } }} color="inherit">
-            About
-          </Button></Link>
-          <Link to="/skills" >
-          <Button  startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {   color:'grey' } }} color="inherit">
-            Skills
-          </Button></Link>
-          <Link to="/projects" >
-          <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />}  sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {  color:'grey' } }} color="inherit">
-            Projects
-          </Button></Link>
-          <Link to="/contact" >
-          <Button startIcon={<PhoneIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', '&:hover': {  color:'grey' } }} color="inherit">
-            Contact
-          </Button></Link>
-        </Toolbar>
-      </AppBar>
+    <Box sx={{ flexGrow: 3 }}>
+        <AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' }}>
+          <Toolbar>
+            <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'black', fontFamily: '"Poppins", sans-serif' }}>
+              <b>Rathish</b>
+            </Typography>
+            <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+              <IconButton
+                edge="start"
+                color="black"
+                aria-label="menu"
+                onClick={toggleDrawer}
+              >
+                <MenuIcon />
+              </IconButton>
+            </Box>
+            <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+              <Link to="/" style={{ textDecoration: 'none' }}>
+                <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2 }}>Home</Button>
+              </Link>
+              <Link to="/about" style={{ textDecoration: 'none' }}>
+                <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2 }}>About</Button>
+              </Link>
+              <Link to="/skills" style={{ textDecoration: 'none' }}>
+                <Button startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2 }}>Skills</Button>
+              </Link>
+              <Link to="/projects" style={{ textDecoration: 'none' }}>
+                <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2 }}>Projects</Button>
+              </Link>
+              <Link to="/contact" style={{ textDecoration: 'none' }}>
+                <Button startIcon={<PhoneIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem' }}>Contact</Button>
+              </Link>
+            </Box>
+          </Toolbar>
+        </AppBar>
+
+        <Drawer
+          anchor="left"
+          open={openDrawer}
+          onClose={toggleDrawer}
+        >
+          <List>
+            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <ListItem button onClick={toggleDrawer}>
+                <Typography variant="h6">Home</Typography>
+              </ListItem>
+            </Link>
+            <Link to="/about" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <ListItem button onClick={toggleDrawer}>
+                <Typography variant="h6">About</Typography>
+              </ListItem>
+            </Link>
+            <Link to="/skills" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <ListItem button onClick={toggleDrawer}>
+                <Typography variant="h6">Skills</Typography>
+              </ListItem>
+            </Link>
+            <Link to="/projects" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <ListItem button onClick={toggleDrawer}>
+                <Typography variant="h6">Projects</Typography>
+              </ListItem>
+            </Link>
+            <Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <ListItem button onClick={toggleDrawer}>
+                <Typography variant="h6">Contact</Typography>
+              </ListItem>
+            </Link>
+          </List>
+        </Drawer>
 
  
       <Box sx={{ marginTop: 10, padding: 4 }}>

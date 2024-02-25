@@ -24,17 +24,22 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import profileImage from './images/mentor3.jpg';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import Drawer from '@mui/material/Drawer';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 
 const Acheivement = (
   <React.Fragment >
 <CardContent sx={{ 
-      background: 'linear-gradient(45deg, #e6f7ff 30%, #fcd7e1 90%)', // Adjust the slightly lighter pink color code
+      background: 'linear-gradient(45deg, #e6f7ff 30%, #fcd7e1 90%)', 
      
 }}>       
       <Typography variant="body2" marginTop="2%" sx={{
   fontFamily: 'Poppins, sans-serif',
-  fontWeight: '530', // 'semibold' is often equivalent to '600'
-  fontSize: '1.3rem', // Adjust the font size as needed (x1)
+  fontWeight: '530', 
+  fontSize: '1.3rem', 
 }}>
 <PlayArrowIcon/> Internshala Trainings-Web Development-jun 2023   
 <a href="https://drive.google.com/file/d/1xwRQkCUgdlctFl7E0uuVifi4UvPnP1bd/view?usp=sharing" target="_blank" rel="noopener noreferrer">
@@ -48,22 +53,20 @@ const Acheivement = (
         </a>         
       </Typography>
     </CardContent>
-    {/* <CardActions>
-      <Button size="small">Learn More</Button>
-    </CardActions> */}
+    
   </React.Fragment>
 );
 
 const Acheivement1 = (
   <React.Fragment >
 <CardContent sx={{ 
-      background: 'linear-gradient(45deg, #e6f7ff 30%, #fcd7e1 90%)', // Adjust the slightly lighter pink color code
+      background: 'linear-gradient(45deg, #e6f7ff 30%, #fcd7e1 90%)', 
      
 }}>       
       <Typography variant="body2" marginTop="2%" sx={{
   fontFamily: 'Poppins, sans-serif',
-  fontWeight: '530', // 'semibold' is often equivalent to '600'
-  fontSize: '1.3rem', // Adjust the font size as needed (x1)
+  fontWeight: '530', 
+  fontSize: '1.3rem', 
 }}>
 <PlayArrowIcon/> SKOLAR-Full Stack Web Development   
 <a href="https://drive.google.com/file/d/1pt_yq6SoO_cGwEk-8lpzRtNno3PGxa4I/view?usp=sharing" target="_blank" rel="noopener noreferrer">
@@ -77,9 +80,6 @@ const Acheivement1 = (
         </a>    
       </Typography>
     </CardContent>
-    {/* <CardActions>
-      <Button size="small">Learn More</Button>
-    </CardActions> */}
   </React.Fragment>
 );
 
@@ -90,13 +90,13 @@ const Acheivement1 = (
 const Experiences = (
   <React.Fragment >
 <CardContent sx={{ 
-      background: 'linear-gradient(45deg, #e6f7ff 30%, #fcd7e1 90%)', // Adjust the slightly lighter pink color code
+      background: 'linear-gradient(45deg, #e6f7ff 30%, #fcd7e1 90%)',
      
 }}>       
       <Typography variant="body2" marginTop="2%" sx={{
   fontFamily: 'Poppins, sans-serif',
-  fontWeight: '500', // 'semibold' is often equivalent to '600'
-  fontSize: '1.3rem', // Adjust the font size as needed (x1)
+  fontWeight: '500', 
+  fontSize: '1.3rem',
 }}>
  <b><h3>Full Stack Web Development Intern</h3></b>
  <p>SKOLAR - Internship</p>
@@ -126,53 +126,100 @@ Remote
           <br />
             
             <p> Skills : <b>Full Stack Web Development</b></p>
-            {/* <p><b>Final Project : <h3>Login and signup page using React.js and Node.js</h3></b></p> */}
             <p> Final Project : <b>Login and signup page using React.js and Node.js</b></p>
 
             </Typography>
 
       </Typography>
     </CardContent>
-    {/* <CardActions>
-      <Button size="small">Learn More</Button>
-    </CardActions> */}
   </React.Fragment>
 );
 
+
+
+
+
 export default function SimplePaper() {
+  const [openDrawer, setOpenDrawer] = React.useState(false);
+
+  const toggleDrawer = () => {
+    setOpenDrawer(!openDrawer);
+  };
   return (
     <>
 
-      <AppBar position="fixed" sx={{background: 'white', boxShadow: 'none', backdropFilter: 'blur(7px)' }}>
-        <Toolbar>
-          <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'black', fontFamily: '"Poppins", sans-serif' }}>
-            <b>Rathish</b>
-          </Typography>
-          <Link to="/" >
-          <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': { textDecorationThickness: '2px', textDecorationOffset: '4px' , color:'grey' } }} color="inherit">
-            Home
-          </Button></Link>
-          <Link to="/about" >
-          <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': { textDecorationThickness: '2px', textDecorationOffset: '4px' , color:'grey' } }} color="inherit">
-            About
-          </Button></Link>
-          <Link to="/skills" >
-          <Button  startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {   color:'grey' } }} color="inherit">
-            Skills
-          </Button></Link>
-          <Link to="/projects" >
-          <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />}  sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {  color:'grey' } }} color="inherit">
-            Projects
-          </Button></Link>
-          <Link to="/contact" >
-          <Button startIcon={<PhoneIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', '&:hover': {  color:'grey' } }} color="inherit">
-            Contact
-          </Button></Link>
-        </Toolbar>
-      </AppBar>
+     <Box sx={{ flexGrow: 3 }}>
+        <AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' }}>
+          <Toolbar>
+            <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'black', fontFamily: '"Poppins", sans-serif' }}>
+              <b>Rathish</b>
+            </Typography>
+            <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+              <IconButton
+                edge="start"
+                color="black"
+                aria-label="menu"
+                onClick={toggleDrawer}
+              >
+                <MenuIcon />
+              </IconButton>
+            </Box>
+            <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+              <Link to="/" style={{ textDecoration: 'none' }}>
+                <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2 }}>Home</Button>
+              </Link>
+              <Link to="/about" style={{ textDecoration: 'none' }}>
+                <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2 }}>About</Button>
+              </Link>
+              <Link to="/skills" style={{ textDecoration: 'none' }}>
+                <Button startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2 }}>Skills</Button>
+              </Link>
+              <Link to="/projects" style={{ textDecoration: 'none' }}>
+                <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2 }}>Projects</Button>
+              </Link>
+              <Link to="/contact" style={{ textDecoration: 'none' }}>
+                <Button startIcon={<PhoneIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem' }}>Contact</Button>
+              </Link>
+            </Box>
+          </Toolbar>
+        </AppBar>
+
+        <Drawer
+          anchor="left"
+          open={openDrawer}
+          onClose={toggleDrawer}
+        >
+          <List>
+            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <ListItem button onClick={toggleDrawer}>
+                <Typography variant="h6">Home</Typography>
+              </ListItem>
+            </Link>
+            <Link to="/about" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <ListItem button onClick={toggleDrawer}>
+                <Typography variant="h6">About</Typography>
+              </ListItem>
+            </Link>
+            <Link to="/skills" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <ListItem button onClick={toggleDrawer}>
+                <Typography variant="h6">Skills</Typography>
+              </ListItem>
+            </Link>
+            <Link to="/projects" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <ListItem button onClick={toggleDrawer}>
+                <Typography variant="h6">Projects</Typography>
+              </ListItem>
+            </Link>
+            <Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <ListItem button onClick={toggleDrawer}>
+                <Typography variant="h6">Contact</Typography>
+              </ListItem>
+            </Link>
+          </List>
+        </Drawer>
 
 
-      <Typography variant="h3" sx={{ marginBottom: '1rem' ,display:'flex',justifyContent:'center',alignItems:"center",marginTop:'7%',marginBottom:'4%'}}><b>Technical Skills</b></Typography>
+      <Typography variant="h3" sx={{ marginBottom: '1rem' ,display:'flex',justifyContent:'center',alignItems:"center",marginTop:'8%',marginBottom:'4%'}}><b>Technical Skills</b></Typography>
 
     <Box
       sx={{
@@ -233,7 +280,6 @@ export default function SimplePaper() {
       <Card variant="outlined">{Acheivement}</Card>
     </Box>
 </Grid>
-          {/* Right Column (Text) */}
           <Grid item xs={12} md={6}>
           
             <Box sx={{ minWidth: 275 ,marginLeft:"5%",paddingRight:"7%"}}>
@@ -248,31 +294,8 @@ export default function SimplePaper() {
       <Box sx={{ minWidth: 275 ,marginLeft:"7%",marginRight:"7%"}}>
       <Card variant="outlined">{Experiences}</Card>
     </Box>
+    </Box>
     </>
 
   );
 }
-
-
-{/* <Grid item>
-<Card sx={{ maxWidth: 300 }}>
-  <CardMedia
-    sx={{ height: 140 }}
-    image="/static/images/cards/contemplative-reptile.jpg"
-    title="green iguana"
-  />
-  <CardContent>
-    <Typography gutterBottom variant="h5" component="div">
-      Lizard
-    </Typography>
-    <Typography variant="body2" color="text.secondary">
-      Lizards are a widespread group of squamate reptiles, with over 6,000
-      species, ranging across all continents except Antarctica
-    </Typography>
-  </CardContent>
-  <CardActions>
-    <Button size="small">Share</Button>
-    <Button size="small">Learn More</Button>
-  </CardActions>
-</Card>
-</Grid> */}
