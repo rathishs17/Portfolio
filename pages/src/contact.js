@@ -367,12 +367,13 @@ export default function SimplePaper1() {
 
   return (
     <>
+    <div id='contact'>
       <Typography
         variant="h4"
         component="div"
         sx={{
           flexGrow: 1,
-          color: 'black',
+          color: 'white',
           fontFamily: '"Poppins", sans-serif',
           display: 'flex',
           justifyContent: 'center',
@@ -380,7 +381,7 @@ export default function SimplePaper1() {
           marginBottom: '3%',
         }}
       >
-        <b>Take a Cappuccino & Chat with me </b>
+        <b>Let's Connect Over Coffee </b>
       </Typography>
 
       <Box
@@ -401,7 +402,7 @@ export default function SimplePaper1() {
         <Paper elevation={0}>
           <Stack direction="row" spacing={1} alignItems="center" marginTop="7%" marginLeft="8%">
             <img src={email} alt="API Icon" style={{ width: '2rem', height: '2rem', borderRadius: '50%', marginRight: '2%' }} />
-            <Typography variant="body1">imrathishai@gmail.com</Typography>
+            <Typography variant="body1">rathish2793@gmail.com</Typography>
           </Stack>
         </Paper>
         <Paper elevation={0}>
@@ -490,7 +491,7 @@ export default function SimplePaper1() {
           <Typography>&copy; 2023-2024 Rathish</Typography>
         </Grid>
       </Grid>
-      <Grid container justifyContent="center" marginTop="0.8%" spacing={2}>
+      {/* <Grid container justifyContent="center" marginTop="0.8%" spacing={2}>
 
       <Grid item>
           <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
@@ -502,8 +503,9 @@ export default function SimplePaper1() {
           <a href="https://github.com/rathishs17" target="_blank" rel="noopener noreferrer">
             <GitHubIcon sx={{ fontSize: '1.7rem' }} />
           </a>
-        </Grid>      </Grid>
-
+        </Grid>      </Grid> */}
+  
+</div>
     </>
   );
 }

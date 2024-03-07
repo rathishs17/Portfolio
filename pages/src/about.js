@@ -193,8 +193,10 @@ export default function About() {
 
   return (
     <>
+    <div id='about'>
+
     <Box sx={{ flexGrow: 3 }}>
-        <AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' }}>
+      {/*   <AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' }}>
           <Toolbar>
             <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'black', fontFamily: '"Poppins", sans-serif' }}>
               <b>Rathish</b>
@@ -261,7 +263,7 @@ export default function About() {
               </ListItem>
             </Link>
           </List>
-        </Drawer>
+        </Drawer> */}
 
  
       <Box sx={{ marginTop: 10, padding: 4 }}>
@@ -382,6 +384,7 @@ export default function About() {
         </Grid>
         
       </Box>
+      </div>
 
        </>
 

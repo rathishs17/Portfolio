@@ -147,9 +147,9 @@ export default function SimplePaper() {
   };
   return (
     <>
-
-     <Box sx={{ flexGrow: 3 }}>
-        <AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' }}>
+    <div id='skill'>
+     <Box sx={{ flexGrow: 3 ,id:"skillss" }}>
+        {/* <AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' }}>
           <Toolbar>
             <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'black', fontFamily: '"Poppins", sans-serif' }}>
               <b>Rathish</b>
@@ -216,7 +216,7 @@ export default function SimplePaper() {
               </ListItem>
             </Link>
           </List>
-        </Drawer>
+        </Drawer> */}
 
 
       <Typography variant="h3" sx={{ marginBottom: '1rem' ,display:'flex',justifyContent:'center',alignItems:"center",marginTop:'8%',marginBottom:'4%'}}><b>Technical Skills</b></Typography>
@@ -295,6 +295,8 @@ export default function SimplePaper() {
       <Card variant="outlined">{Experiences}</Card>
     </Box>
     </Box>
+
+    </div>
     </>
 
   );

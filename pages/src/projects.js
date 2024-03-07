@@ -43,8 +43,10 @@ export default function MediaCard() {
 
   return (
 <>
+<div id='project'>
+
 <Box sx={{ flexGrow: 3 }}>
-        <AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' }}>
+       {/*  <AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' }}>
           <Toolbar>
             <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'black', fontFamily: '"Poppins", sans-serif' }}>
               <b>Rathish</b>
@@ -77,8 +79,8 @@ export default function MediaCard() {
               </Link>
             </Box>
           </Toolbar>
-        </AppBar>
-
+        </AppBar> */}
+{/* 
         <Drawer
           anchor="left"
           open={openDrawer}
@@ -111,7 +113,7 @@ export default function MediaCard() {
               </ListItem>
             </Link>
           </List>
-        </Drawer>
+        </Drawer> */}
 
 
 
@@ -541,6 +543,8 @@ A connecting 4 game as a functionality of connecting the 4 circles at a same lin
 
       </Grid>
       </Box>
+      </div>
+
     </>
   );
 }

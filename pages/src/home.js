@@ -17,27 +17,27 @@
 //     <Box sx={{ flexGrow: 3 } }>
 //       <AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' }}>
 //         <Toolbar>
-//           <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'black', fontFamily: '"Poppins", sans-serif' }}>
+//           <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'white', fontFamily: '"Poppins", sans-serif' }}>
 //             <b>Rathish</b>
 //           </Typography>
 //           <Link to="/" >
-//           <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': { textDecorationThickness: '2px', textDecorationOffset: '4px' , color:'grey' } }} color="inherit">
+//           <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2, '&:hover': { textDecorationThickness: '2px', textDecorationOffset: '4px' , color:'grey' } }} color="inherit">
 //             Home
 //           </Button></Link>
 //           <Link to="/about" >
-//           <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': { textDecorationThickness: '2px', textDecorationOffset: '4px' , color:'grey' } }} color="inherit">
+//           <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2, '&:hover': { textDecorationThickness: '2px', textDecorationOffset: '4px' , color:'grey' } }} color="inherit">
 //             About
 //           </Button></Link>
 //           <Link to="/skills" >
-//           <Button  startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {   color:'grey' } }} color="inherit">
+//           <Button  startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2, '&:hover': {   color:'grey' } }} color="inherit">
 //             Skills
 //           </Button></Link>
 //           <Link to="/projects" >
-//           <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />}  sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2, '&:hover': {  color:'grey' } }} color="inherit">
+//           <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />}  sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2, '&:hover': {  color:'grey' } }} color="inherit">
 //             Projects
 //           </Button></Link>
 //           <Link to="/contact" >
-//           <Button startIcon={<PhoneIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', '&:hover': {  color:'grey' } }} color="inherit">
+//           <Button startIcon={<PhoneIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', '&:hover': {  color:'grey' } }} color="inherit">
 //             Contact
 //           </Button></Link>
 //         </Toolbar>
@@ -75,7 +75,7 @@
 
 // <a href='https://drive.google.com/file/d/18e1lGIA2DN_sm6EkcatZpuGqS3If8I3u/view?usp=sharing'>
 //   <Typography textAlign="center">
-//     <Button color="secondary" variant='outlined' sx={{ border: '1px solid black', color: 'black', borderRadius: '13px' }}>
+//     <Button color="secondary" variant='outlined' sx={{ border: '1px solid white', color: 'white', borderRadius: '13px' }}>
 //       VIEW CV
 //     </Button>
 //   </Typography>
@@ -119,10 +119,14 @@ import ListItem from '@mui/material/ListItem';
 import Grid from '@mui/material/Grid';
 import profileImage from './images/mentor3.jpg';
 import me from './images/rathishpic.png';
+import HomeIcon from '@mui/icons-material/Home';
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from 'react-router-dom';
+
+import { Link as ScrollLink } from 'react-scroll';
+
 
 export default function Home() {
   const [openDrawer, setOpenDrawer] = React.useState(false);
@@ -134,15 +138,15 @@ export default function Home() {
   return (
     <>
       <Box sx={{ flexGrow: 3 }}>
-        <AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' }}>
+        <AppBar position="static" sx={{ background: '#101629', boxShadow: '5px 5x 5px white',color:'white' }}>
           <Toolbar>
-            <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'black', fontFamily: '"Poppins", sans-serif' }}>
+            <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'white', fontFamily: '"Poppins", sans-serif' }}>
               <b>Rathish</b>
             </Typography>
             <Box sx={{ display: { xs: 'block', md: 'none' } }}>
               <IconButton
                 edge="start"
-                color="black"
+                color="white"
                 aria-label="menu"
                 onClick={toggleDrawer}
               >
@@ -151,20 +155,57 @@ export default function Home() {
             </Box>
             <Box sx={{ display: { xs: 'none', md: 'block' } }}>
               <Link to="/" style={{ textDecoration: 'none' }}>
-                <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2 }}>Home</Button>
+                <Button startIcon={<HomeIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>Home</Button>
               </Link>
-              <Link to="/about" style={{ textDecoration: 'none' }}>
-                <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2 }}>About</Button>
-              </Link>
-              <Link to="/skills" style={{ textDecoration: 'none' }}>
-                <Button startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2 }}>Skills</Button>
-              </Link>
-              <Link to="/projects" style={{ textDecoration: 'none' }}>
-                <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2 }}>Projects</Button>
-              </Link>
-              <Link to="/contact" style={{ textDecoration: 'none' }}>
-                <Button startIcon={<PhoneIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem' }}>Contact</Button>
-              </Link>
+              {/* <a href="/about" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>
+    About
+  </Button>
+</a> */}
+<ScrollLink
+  to="about"
+  smooth={true}
+  duration={500} // Adjust the duration as needed
+  style={{ textDecoration: 'none', color: 'inherit' }}
+>
+  <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>
+    About
+  </Button>
+</ScrollLink>
+
+              {/* <Link to="/skills" style={{ textDecoration: 'none' }}>
+                <Button startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>Skills</Button>
+              </Link> */}
+              <ScrollLink
+  to="skill"
+  smooth={true}
+  duration={500} // Adjust the duration as needed
+  style={{ textDecoration: 'none', color: 'inherit' }}
+>
+  <Button startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>
+    Skills
+  </Button>
+</ScrollLink>
+              <ScrollLink
+  to="project"
+  smooth={true}
+  duration={500} // Adjust the duration as needed
+  style={{ textDecoration: 'none', color: 'inherit' }}
+>
+  <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>
+    Projects
+  </Button>
+</ScrollLink>
+<ScrollLink
+  to="contact"
+  smooth={true}
+  duration={500} // Adjust the duration as needed
+  style={{ textDecoration: 'none', color: 'inherit' }}
+>
+  <Button startIcon={<PhoneIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>
+    Contact
+  </Button>
+</ScrollLink>
             </Box>
           </Toolbar>
         </AppBar>
@@ -174,38 +215,69 @@ export default function Home() {
           open={openDrawer}
           onClose={toggleDrawer}
         >
-          <List>
-            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+  <List style={{ display: 'flex', flexDirection: 'column' }}>
+            {/* <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
               <ListItem button onClick={toggleDrawer}>
                 <Typography variant="h6">Home</Typography>
               </ListItem>
-            </Link>
-            <Link to="/about" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <ListItem button onClick={toggleDrawer}>
-                <Typography variant="h6">About</Typography>
-              </ListItem>
-            </Link>
-            <Link to="/skills" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <ListItem button onClick={toggleDrawer}>
-                <Typography variant="h6">Skills</Typography>
-              </ListItem>
-            </Link>
-            <Link to="/projects" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <ListItem button onClick={toggleDrawer}>
-                <Typography variant="h6">Projects</Typography>
-              </ListItem>
-            </Link>
-            <Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <ListItem button onClick={toggleDrawer}>
-                <Typography variant="h6">Contact</Typography>
-              </ListItem>
-            </Link>
+            </Link> */}
+            <ScrollLink
+  to=""
+  smooth={true}
+  duration={500} // Adjust the duration as needed
+  style={{ textDecoration: 'none', color: 'inherit' }}
+>
+  <Button  sx={{ textTransform: 'none', color: 'black', fontSize: '1.3rem', marginRight: 0 }}>
+    Home
+  </Button>
+</ScrollLink>
+
+<ScrollLink
+  to="about"
+  smooth={true}
+  duration={500} // Adjust the duration as needed
+  style={{ textDecoration: 'none', color: 'inherit' }}
+>
+  <Button  sx={{ textTransform: 'none', color: 'black', fontSize: '1.3rem', marginRight: 0 }}>
+    About
+  </Button>
+</ScrollLink>
+<ScrollLink
+  to="skill"
+  smooth={true}
+  duration={500} // Adjust the duration as needed
+  style={{ textDecoration: 'none', color: 'inherit' }}
+>
+  <Button  sx={{ textTransform: 'none', color: 'black', fontSize: '1.3rem', marginRight: 0 }}>
+    Skills
+  </Button>
+</ScrollLink>
+<ScrollLink
+  to="project"
+  smooth={true}
+  duration={500} // Adjust the duration as needed
+  style={{ textDecoration: 'none', color: 'inherit' }}
+>
+  <Button  sx={{ textTransform: 'none', color: 'black', fontSize: '1.3rem', marginRight: 0 }}>
+   Projects
+  </Button>
+</ScrollLink>
+<ScrollLink
+  to="contact"
+  smooth={true}
+  duration={500} // Adjust the duration as needed
+  style={{ textDecoration: 'none', color: 'inherit' }}
+>
+  <Button  sx={{ textTransform: 'none', color: 'black', fontSize: '1.3rem', marginRight: 0 }}>
+    Contact
+  </Button>
+</ScrollLink>
           </List>
         </Drawer>
 
         {/* Rest of your content */}
 
-        <Box sx={{ marginTop: 10, padding: 4 }}>
+        <Box sx={{ marginTop: 3, padding: 4 }}>
         <Grid container spacing={3}>
            <Grid item xs={12} md={6} textAlign="center" marginTop="3%">
              <img src={me} alt="Profile" style={{ width: '70%', height: 'auto', borderRadius: 8 , animation: 'float 3s infinite'}} />
@@ -236,7 +308,7 @@ export default function Home() {
 
  <a href='https://drive.google.com/file/d/18e1lGIA2DN_sm6EkcatZpuGqS3If8I3u/view?usp=sharing'>
    <Typography textAlign="center">
-     <Button color="secondary" variant='outlined' sx={{ border: '1px solid black', color: 'black', borderRadius: '13px' }}>
+     <Button color="secondary" variant='outlined' sx={{ border: '1px solid white', color: 'white', borderRadius: '13px' }}>
        VIEW CV
      </Button>
    </Typography>
@@ -258,3 +330,108 @@ export default function Home() {
     </>
   );
 }
+
+
+// import * as React from 'react';
+// import AppBar from '@mui/material/AppBar';
+// import Box from '@mui/material/Box';
+// import Toolbar from '@mui/material/Toolbar';
+// import Typography from '@mui/material/Typography';
+// import IconButton from '@mui/material/IconButton';
+// import MenuIcon from '@mui/icons-material/Menu';
+// import Button from '@mui/material/Button';
+// import PersonIcon from '@mui/icons-material/Person';
+// import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
+// import WidgetsIcon from '@mui/icons-material/Widgets';
+// import PhoneIcon from '@mui/icons-material/Phone';
+// import Drawer from '@mui/material/Drawer';
+// import List from '@mui/material/List';
+// import ListItem from '@mui/material/ListItem';
+// import Grid from '@mui/material/Grid';
+// import me from './images/rathishpic.png';
+
+// import LinkedInIcon from '@mui/icons-material/LinkedIn';
+// import GitHubIcon from '@mui/icons-material/GitHub';
+// import { Link as ScrollLink } from 'react-scroll';
+
+// export default function Home() {
+//   const [openDrawer, setOpenDrawer] = React.useState(false);
+
+//   const toggleDrawer = () => {
+//     setOpenDrawer(!openDrawer);
+//   };
+
+//   return (
+//     <>
+//       <Box sx={{ flexGrow: 3 }}>
+//         <AppBar position="static" sx={{ background: '#101629', boxShadow: '5px 5x 5px white', color: 'white' }}>
+//           <Toolbar>
+//             <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'white', fontFamily: '"Poppins", sans-serif' }}>
+//               <b>Rathish</b>
+//             </Typography>
+//             <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+//               <IconButton
+//                 edge="start"
+//                 color="white"
+//                 aria-label="menu"
+//                 onClick={toggleDrawer}
+//               >
+//                 <MenuIcon />
+//               </IconButton>
+//             </Box>
+//             <Box sx={{ display: { xs: 'none', md: 'block' } }}>
+//               <ScrollLink to="home" smooth={true} duration={500}>
+//                 <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>Home</Button>
+//               </ScrollLink>
+//               <ScrollLink to="about" smooth={true} duration={500}>
+//                 <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>About</Button>
+//               </ScrollLink>
+//               <ScrollLink to="skillss" smooth={true} duration={500}>
+//                 <Button startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>Skills</Button>
+//               </ScrollLink>
+//               <ScrollLink to="projects" smooth={true} duration={500}>
+//                 <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>Projects</Button>
+//               </ScrollLink>
+//               <ScrollLink to="contact" smooth={true} duration={500}>
+//                 <Button startIcon={<PhoneIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem' }}>Contact</Button>
+//               </ScrollLink>
+//             </Box>
+//           </Toolbar>
+//         </AppBar>
+
+//         {/* Rest of your content */}
+
+//         <Box id="home" sx={{ marginTop: 3, padding: 4 }}>
+//           <Grid container spacing={3}>
+//             {/* ... */}
+//           </Grid>
+//         </Box>
+
+//         <Box id="about" sx={{ marginTop: 3, padding: 4 }}>
+//           <Grid container spacing={3}>
+//             {/* ... */}
+//           </Grid>
+//         </Box>
+
+//         <Box id="skills" sx={{ marginTop: 3, padding: 4 }}>
+//           <Grid container spacing={3}>
+//             {/* ... */}
+//           </Grid>
+//         </Box>
+
+//         <Box id="projects" sx={{ marginTop: 3, padding: 4 }}>
+//           <Grid container spacing={3}>
+//             {/* ... */}
+//           </Grid>
+//         </Box>
+
+//         <Box id="contact" sx={{ marginTop: 3, padding: 4 }}>
+//           <Grid container spacing={3}>
+//             {/* ... */}
+//           </Grid>
+//         </Box>
+
+//       </Box>
+//     </>
+//   );
+// }
