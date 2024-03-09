@@ -195,12 +195,11 @@ export default function About() {
     <>
     <div id='about'>
 
-    <Box sx={{ flexGrow: 3 }}>
       {/*   <AppBar position="fixed" sx={{ background: 'white', boxShadow: 'none' }}>
           <Toolbar>
-            <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'black', fontFamily: '"Poppins", sans-serif' }}>
-              <b>Rathish</b>
-            </Typography>
+          <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'black', fontFamily: '"Poppins", sans-serif' }}>
+          <b>Rathish</b>
+          </Typography>
             <Box sx={{ display: { xs: 'block', md: 'none' } }}>
               <IconButton
                 edge="start"
@@ -220,28 +219,28 @@ export default function About() {
               </Link>
               <Link to="/skills" style={{ textDecoration: 'none' }}>
                 <Button startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2 }}>Skills</Button>
-              </Link>
-              <Link to="/projects" style={{ textDecoration: 'none' }}>
+                </Link>
+                <Link to="/projects" style={{ textDecoration: 'none' }}>
                 <Button startIcon={<WidgetsIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem', marginRight: 2 }}>Projects</Button>
               </Link>
               <Link to="/contact" style={{ textDecoration: 'none' }}>
-                <Button startIcon={<PhoneIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem' }}>Contact</Button>
+              <Button startIcon={<PhoneIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'black', fontSize: '1.5rem' }}>Contact</Button>
               </Link>
-            </Box>
+              </Box>
           </Toolbar>
         </AppBar>
 
         <Drawer
-          anchor="left"
-          open={openDrawer}
+        anchor="left"
+        open={openDrawer}
           onClose={toggleDrawer}
         >
           <List>
-            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
               <ListItem button onClick={toggleDrawer}>
-                <Typography variant="h6">Home</Typography>
+              <Typography variant="h6">Home</Typography>
               </ListItem>
-            </Link>
+              </Link>
             <Link to="/about" style={{ textDecoration: 'none', color: 'inherit' }}>
               <ListItem button onClick={toggleDrawer}>
                 <Typography variant="h6">About</Typography>
@@ -253,18 +252,19 @@ export default function About() {
               </ListItem>
             </Link>
             <Link to="/projects" style={{ textDecoration: 'none', color: 'inherit' }}>
-              <ListItem button onClick={toggleDrawer}>
-                <Typography variant="h6">Projects</Typography>
-              </ListItem>
+            <ListItem button onClick={toggleDrawer}>
+            <Typography variant="h6">Projects</Typography>
+            </ListItem>
             </Link>
             <Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>
               <ListItem button onClick={toggleDrawer}>
-                <Typography variant="h6">Contact</Typography>
+              <Typography variant="h6">Contact</Typography>
               </ListItem>
             </Link>
           </List>
         </Drawer> */}
 
+              <Box sx={{ flexGrow: 3 }}>
  
       <Box sx={{ marginTop: 10, padding: 4 }}>
         <Grid container spacing={3}>

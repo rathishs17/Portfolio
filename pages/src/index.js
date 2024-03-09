@@ -6,6 +6,7 @@ import About from './about';
 import SimplePaper from './skills';
 import MediaCard from './projects';
 import SimplePaper1 from './contact';
+import ContactPage from './sample';
 const appstyle = {
   backgroundColor: '#101629',
   color:'white',

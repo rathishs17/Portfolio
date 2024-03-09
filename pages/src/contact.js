@@ -329,6 +329,7 @@
 //     </>
 //   );
 // };
+import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 
 import SimplePaper from './skills';
 import React, { useRef } from 'react';
@@ -345,6 +346,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import email from './images/email.jpg';
+import profileImage from './images/rathishai.jpg';
+
 
 export default function SimplePaper1() {
   const form = useRef();
@@ -384,7 +387,19 @@ export default function SimplePaper1() {
         <b>Let's Connect Over Coffee </b>
       </Typography>
 
-      <Box
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <Box
         sx={{
           display: 'flex',
           justifyContent: 'center',
@@ -411,11 +426,168 @@ export default function SimplePaper1() {
             <Typography variant="body1"> 9342825949</Typography>
           </Stack>
         </Paper>
+      </Box>   important*/}
+
+<Box sx={{ flexGrow: 3 }}>
+
+
+
+<Box sx={{ marginTop: 10, padding: 4,marginLeft:10 }}>
+        <Grid container spacing={7}>
+          {/* Left Column (Image) */}
+
+         {
+                   <Grid item xs={12} md={6} textAlign="" marginTop="0%">
+
+         <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          flexDirection: 'column',
+          marginLeft: '22%',
+          '& > :not(style)': {
+            m: 2,
+            width: 324,
+            height: 37,
+            // bgcolor: '#FFD6E5',
+            borderRadius: '10px',
+          },
+        }}
+      >
+        {}
+        {/* sx={{ fontSize: '0.7rem' }} */}
+        <Typography  marginBottom="7%"><h1>Contact Info</h1></Typography>
+        <br/>
+        <body variant="">
+        <Stack direction="row" spacing={1} alignItems="center">
+    {<TipsAndUpdatesIcon/>}
+    <Typography>rat</Typography>
+  </Stack>        <br/><Typography >9342825949</Typography>   
+         <br/><Typography >Coimbatore</Typography>   
+         </body>
+
+        {/* <Paper elevation={0}>
+          <Stack direction="row" spacing={1} alignItems="center" marginTop="7%" marginLeft="8%">
+            <img src={email} alt="API Icon" style={{ width: '2rem', height: '2rem', borderRadius: '50%', marginRight: '2%' }} />
+          </Stack>
+        </Paper>
+        <Paper elevation={0}>
+        </Stack>
+        <Stack direction="row" spacing={1} alignItems="center" marginTop="7%" marginLeft="8%">
+          <MobileFriendlyIcon color="secondary" />
+          </Paper> */}
+      </Box>   
+      </Grid>
+      }
+
+          {/* Right Column (Text) */}
+          <Grid item xs={12} md={6} textAlign="center" marginTop="2.3%">
+
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          maxWidth: '80%',
+          justifyContent: 'center',
+          marginRight: '10%',
+        }}
+      >
+        <input
+          type="text"
+          name="user_name"
+          placeholder="your name"
+          style={{
+            marginTop: '1%',
+            paddingLeft: '5%',
+            paddingRight: '9%',
+            paddingTop: '3%',
+            paddingBottom: '3%',
+            border: '2px solid grey',
+            borderRadius: '8px',
+            backgroundColor: '#ADD8E6',
+          }}
+        />
+        <input
+          type="email"
+          name="user_email"
+          placeholder="your email"
+          style={{
+            marginTop: '3%',
+            paddingLeft: '5%',
+            paddingRight: '9%',
+            paddingTop: '3%',
+            paddingBottom: '3%',
+            borderRadius: '8px',
+            border: '2px solid grey',
+            backgroundColor: '#ADD8E6',
+          }}
+        />
+        <textarea
+          name="message"
+          placeholder="Type your message here .."
+          style={{
+            marginTop: '3%',
+            paddingLeft: '5%',
+            paddingRight: '9%',
+            paddingTop: '3%',
+            paddingBottom: '10%',
+            border: '2px solid grey',
+            borderRadius: '8px',
+            backgroundColor: '#ADD8E6',
+          }}
+        />
+        <input
+          type="submit"
+          value="Send Message"
+          style={{
+            marginTop: '5.5%',
+            paddingLeft: '5%',
+            paddingRight: '8%',
+            paddingTop: '3%',
+            paddingBottom: '3%',
+            backgroundColor: '#000080',
+            color: 'white',
+            width: '150px',  
+            marginLeft:'350px',
+            borderRadius: '11px',
+            fontSize:'15px'
+
+          }}
+        />
+      </form>
+      </Grid>
+      <Grid container justifyContent="center" marginTop="3.3%" spacing={2}>
+        <Grid item>
+          <Typography>&copy; 2023-2024 Rathish</Typography>
+        </Grid>
+      </Grid> 
+        </Grid>
+        
       </Box>
 
-      <br />
-      <br />
 
+
+      {/* <br />
+      <br /> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* 
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -490,7 +662,32 @@ export default function SimplePaper1() {
         <Grid item>
           <Typography>&copy; 2023-2024 Rathish</Typography>
         </Grid>
-      </Grid>
+      </Grid> imporant */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {/* <Grid container justifyContent="center" marginTop="0.8%" spacing={2}>
 
       <Grid item>
@@ -504,7 +701,8 @@ export default function SimplePaper1() {
             <GitHubIcon sx={{ fontSize: '1.7rem' }} />
           </a>
         </Grid>      </Grid> */}
-  
+  </Box>
+
 </div>
     </>
   );
