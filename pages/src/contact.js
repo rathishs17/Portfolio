@@ -347,6 +347,7 @@ import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import email from './images/email.jpg';
 import profileImage from './images/rathishai.jpg';
+import RoomIcon from '@mui/icons-material/Room';
 
 
 export default function SimplePaper1() {
@@ -428,11 +429,11 @@ export default function SimplePaper1() {
         </Paper>
       </Box>   important*/}
 
-<Box sx={{ flexGrow: 3 }}>
+<Box sx={{ border:"2px solid white", borderRadius:"30px",width:"70%" ,marginLeft:"16%" ,marginBottom:"0%"}}>
 
 
 
-<Box sx={{ marginTop: 10, padding: 4,marginLeft:10 }}>
+<Box sx={{ marginTop: 6, padding: 2,marginLeft:10 }}>
         <Grid container spacing={7}>
           {/* Left Column (Image) */}
 
@@ -460,11 +461,25 @@ export default function SimplePaper1() {
         <br/>
         <body variant="">
         <Stack direction="row" spacing={1} alignItems="center">
-    {<TipsAndUpdatesIcon/>}
-    <Typography>rat</Typography>
-  </Stack>        <br/><Typography >9342825949</Typography>   
-         <br/><Typography >Coimbatore</Typography>   
-         </body>
+          {<EmailIcon/>}
+         <Typography>rathish2793@gmail.com</Typography>
+        </Stack>        
+         <br/>
+         <Stack direction="row" spacing={1} alignItems="center">
+          {<MobileFriendlyIcon/>}
+         <Typography>9342825949</Typography>
+        </Stack>           
+        <br/>
+        <Stack direction="row" spacing={1} alignItems="center">
+          {<RoomIcon/>}
+         <Typography>Coimbatore</Typography>
+        </Stack> 
+        <Stack direction="row" spacing={2} alignItems="center" marginTop="10%" marginLeft="0.5%" fontSize="9rem">
+           <GitHubIcon sx={{ fontSize: '2.5rem' }}/>
+        <LinkedInIcon sx={{ fontSize: '2.5rem' }}/> 
+        </Stack>       
+         
+        </body>
 
         {/* <Paper elevation={0}>
           <Stack direction="row" spacing={1} alignItems="center" marginTop="7%" marginLeft="8%">
@@ -481,7 +496,7 @@ export default function SimplePaper1() {
       }
 
           {/* Right Column (Text) */}
-          <Grid item xs={12} md={6} textAlign="center" marginTop="2.3%">
+          <Grid item xs={12} md={6} textAlign="center" paddingBottom="8%">
 
       <form
         ref={form}
@@ -542,15 +557,17 @@ export default function SimplePaper1() {
           type="submit"
           value="Send Message"
           style={{
-            marginTop: '5.5%',
+            marginTop: '6.5%',
             paddingLeft: '5%',
             paddingRight: '8%',
             paddingTop: '3%',
             paddingBottom: '3%',
             backgroundColor: '#000080',
             color: 'white',
+            boxShadow: '0px 0px 2px 1px rgba(0, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 255, 255, 0.19)',
+borderColor:"blue",
             width: '150px',  
-            marginLeft:'350px',
+            marginLeft:'500x',
             borderRadius: '11px',
             fontSize:'15px'
 
@@ -558,11 +575,7 @@ export default function SimplePaper1() {
         />
       </form>
       </Grid>
-      <Grid container justifyContent="center" marginTop="3.3%" spacing={2}>
-        <Grid item>
-          <Typography>&copy; 2023-2024 Rathish</Typography>
-        </Grid>
-      </Grid> 
+     
         </Grid>
         
       </Box>
@@ -702,7 +715,11 @@ export default function SimplePaper1() {
           </a>
         </Grid>      </Grid> */}
   </Box>
-
+  <Grid container justifyContent="center" marginTop="3.3%" paddingBottom="2%" spacing={2} bgcolor="lack">
+        <Grid item>
+          <Typography>&copy; 2023-2024 Rathish</Typography>
+        </Grid>
+      </Grid> 
 </div>
     </>
   );
