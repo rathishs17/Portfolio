@@ -117,18 +117,18 @@ export default function MediaCard() {
 
 
 
-     <Typography variant="h3" sx={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center', alignItems: "center", marginTop: '7%', marginBottom: '2%' }}><b>Projects</b></Typography>
+     <Typography variant="h3" sx={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center', alignItems: "center", marginTop: '5%', marginBottom: '2%' }}><b>Projects</b></Typography>
 
      
       <Tabs value={tabValue} onChange={handleTabChange} centered  >
         {/* <Tab label="WEB" /> */}
-        <Tab label="WEB" />
-        <Tab label="CORE" />
+        {/* <Tab label="WEB" />
+        <Tab label="CORE" /> */}
 
       </Tabs>
 
      
-      <Grid container spacing={5} display="flex" justifyContent="center" marginTop="4%">
+      <Grid container spacing={5} display="flex" justifyContent="center" marginTop="0.2%" >
         {tabValue === 3 && (
           <>
             <Grid item>
@@ -139,7 +139,7 @@ export default function MediaCard() {
     image={elearn}
     title="E-learning platform"
   />
-  <CardContent>
+  <CardContent >
     <Typography gutterBottom variant="h5" component="div">
     E-learning platform
     </Typography>

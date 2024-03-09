@@ -475,7 +475,7 @@ export default function SimplePaper1() {
          <Typography>Coimbatore</Typography>
         </Stack> 
         <Stack direction="row" spacing={2} alignItems="center" marginTop="10%" marginLeft="0.5%" fontSize="9rem">
-           <GitHubIcon sx={{ fontSize: '2.5rem' }}/>
+           <GitHubIcon sx={{ fontSize: '2.5rem' , }}/>
         <LinkedInIcon sx={{ fontSize: '2.5rem' }}/> 
         </Stack>       
          
@@ -519,9 +519,11 @@ export default function SimplePaper1() {
             paddingRight: '9%',
             paddingTop: '3%',
             paddingBottom: '3%',
+            boxShadow: '0px 0px 1px 1px rgba(0, 2z5, 255, 0.2), 0 1px 1px 0 rgba(0, 255, 255, 0.19)',
+
             border: '2px solid grey',
             borderRadius: '8px',
-            backgroundColor: '#ADD8E6',
+            backgroundColor: '#F0FFFF	',
           }}
         />
         <input
@@ -534,9 +536,11 @@ export default function SimplePaper1() {
             paddingRight: '9%',
             paddingTop: '3%',
             paddingBottom: '3%',
+            boxShadow: '0px 0px 0.1px 0.1px rgba(0, 2z5, 255, 0.2), 0 0.1px 0.1px 0 rgba(0, 255, 255, 0.19)',
+
             borderRadius: '8px',
             border: '2px solid grey',
-            backgroundColor: '#ADD8E6',
+            backgroundColor: '#F0FFFF	',
           }}
         />
         <textarea
@@ -548,9 +552,11 @@ export default function SimplePaper1() {
             paddingRight: '9%',
             paddingTop: '3%',
             paddingBottom: '10%',
+            boxShadow: '0px 0px 0.1px 0.1px rgba(0, 2z5, 255, 0.2), 0 0.1px 0.1px 0 rgba(0, 255, 255, 0.19)',
+
             border: '2px solid grey',
             borderRadius: '8px',
-            backgroundColor: '#ADD8E6',
+            backgroundColor: '#F0FFFF	',
           }}
         />
         <input
@@ -569,7 +575,8 @@ borderColor:"blue",
             width: '150px',  
             marginLeft:'500x',
             borderRadius: '11px',
-            fontSize:'15px'
+            fontSize:'15px',
+            cursor: 'pointer' // Adding cursor style when hovering
 
           }}
         />
@@ -717,7 +724,7 @@ borderColor:"blue",
   </Box>
   <Grid container justifyContent="center" marginTop="3.3%" paddingBottom="2%" spacing={2} bgcolor="lack">
         <Grid item>
-          <Typography>&copy; 2023-2024 Rathish</Typography>
+          <Typography>Developed by Rathish 💜</Typography>
         </Grid>
       </Grid> 
 </div>
