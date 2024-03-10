@@ -21,6 +21,7 @@ const App = () => (
 <SimplePaper/>
 <MediaCard/>
 <SimplePaper1/>
+<ContactPage/>
   </BrowserRouter>
   </div>
 );

@@ -587,12 +587,16 @@ borderColor:"blue",
         
       </Box>
 
-
-
-      {/* <br />
-      <br /> */}
-
-
+</Box>
+<Grid container justifyContent="center" marginTop="3.3%" paddingBottom="2%" spacing={2} bgcolor="lack">
+      <Grid item>
+        <Typography>Developed by Rathish 💜</Typography>
+      </Grid>
+    </Grid> 
+</div>
+  </>
+);
+}
 
 
 
@@ -721,13 +725,3 @@ borderColor:"blue",
             <GitHubIcon sx={{ fontSize: '1.7rem' }} />
           </a>
         </Grid>      </Grid> */}
-  </Box>
-  <Grid container justifyContent="center" marginTop="3.3%" paddingBottom="2%" spacing={2} bgcolor="lack">
-        <Grid item>
-          <Typography>Developed by Rathish 💜</Typography>
-        </Grid>
-      </Grid> 
-</div>
-    </>
-  );
-}

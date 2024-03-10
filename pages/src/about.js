@@ -314,45 +314,48 @@ export default function About() {
 
 
 
+    <Typography variant="h5" sx={{ display: 'flex', fontFamily: '"Poppins", sans-serif', textAlign: 'center' , marginTop: '0%',justifyContent:'center'}}>
+              <h1><b color='grey'>Education</b></h1> {/* Replace with your actual text */}
+            </Typography>
 
 
 
-
-    <Box sx={{ flexGrow: 3 } }>
+    <Box sx={{ flexGrow: 3 ,display:"flex",flexDirection: "column",marginLeft:"0%"} }>
     
  
-      <Box sx={{ marginTop: 5, padding: 4 }}>
+      <Box sx={{ marginTop: 0, padding: 1 ,display:"flex",flexDirection: "row"}}>
         <Grid container spacing={3}>
           {/* Left Column (Image) */}
          
 
           {/* Right Column (Text) */}
           <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ fontFamily: '"Poppins", sans-serif', textAlign: 'center' , marginTop: '-12%'}}>
-              <h1><b color='grey'>Education</b></h1> {/* Replace with your actual text */}
-            </Typography>
-            <Box sx={{ minWidth: 275 ,marginLeft:"5%"}}>
+          {/* <Typography variant="h5" sx={{ display: 'flex', fontFamily: '"Poppins", sans-serif', textAlign: 'center' , marginTop: '0%',justifyContent:'center'}}>
+              <h1><b color='grey'>Education</b></h1> 
+            </Typography> */}
+            <Box sx={{ minWidth: 270 ,marginLeft:"7%"}}>
       <Card variant="outlined">{card}</Card>
     </Box>
 
-    <Box sx={{ minWidth: 275 ,marginLeft:"5%",marginTop:"3%"}}>
-      <Card variant="outlined">{card3}</Card>
-    </Box>
 
-    <Box sx={{ minWidth: 275 ,marginLeft:"5%",marginTop:"3%"}}>
+    {/* <Box sx={{ minWidth: 275 ,marginLeft:"5%",marginTop:"3%"}}>
       <Card variant="outlined">{card2}</Card>
-    </Box>
+    </Box> */}
 
 
            
                </Grid>
 
-               <Grid item xs={12} md={6} textAlign="center" marginTop="8%">
+               {/* <Grid item xs={12} md={6} textAlign="center" marginTop="8%">
             <img src={redu} alt="Profile" style={{ width: '50%', height: 'auto', borderRadius: 8 , animation: 'float 3s infinite'}} />
-          </Grid>
+          </Grid> */}
+          <Grid item xs={12} md={6}>
 
+<Box sx={{ minWidth: 270 ,marginRight:"7%",}}>
+      <Card variant="outlined">{card}</Card>
+    </Box>
         </Grid>
-        
+        </Grid>
       </Box>
     </Box>
 
@@ -361,17 +364,17 @@ export default function About() {
 
 
 
-    <Box sx={{ marginTop: 5, padding: 4 }}>
+    {/* <Box sx={{ marginTop: 5, padding: 4 }}>
         <Grid container spacing={3}>
-          {/* Left Column (Image) */}
+          Left Column (Image)
           <Grid item xs={12} md={6} textAlign="center" marginTop="8%">
             <img src={achieves} alt="Profile" style={{ width: '50%', height: 'auto', borderRadius: 8 , animation: 'float 3s infinite'}} />
           </Grid>
 
-          {/* Right Column (Text) */}
+          Right Column (Text)
           <Grid item xs={12} md={6}>
           <Typography variant="h5" sx={{ fontFamily: '"Poppins", sans-serif', textAlign: 'center' , marginTop: '-6%'}}>
-              <h1><b color='grey'>Acheivements</b></h1> {/* Replace with your actual text */}
+              <h1><b color='grey'>Acheivements</b></h1> 
             </Typography>
             <Box sx={{ minWidth: 275 ,marginLeft:"5%"}}>
       <Card variant="outlined">{Acheivement}</Card>
@@ -383,7 +386,7 @@ export default function About() {
 
         </Grid>
         
-      </Box>
+      </Box> */}
       </div>
 
        </>

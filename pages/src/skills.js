@@ -114,10 +114,7 @@ Remote
           <li>Collaborated with the development team to design and implement responsive user interfaces using HTML, CSS, and JavaScript.</li>
             <li>Assisted in the integration of back-end functionalities using Node.js, Express, and MongoDB.</li>
             <li>Conducted thorough testing, identified and fixed bugs, resulting in a 20% improvement in application performance.</li>          </ul>
-          Achieved notable milestones, including:
-          <ul>
-          <li>Successfully delivered a fully functional e-commerce website, meeting project deadlines and exceeding client expectations.</li>
-            <li>Implemented a real-time chat feature, enhancing user engagement and interaction on the platform.</li>          </ul>
+          
           Developed strong skills in : <b>HTML, CSS, javaScript, MongoDB, React.js, Node.js, Express.js</b> 
           <ul>
           <li>Full-stack web development, including proficiency in MERN stack technologies.</li>

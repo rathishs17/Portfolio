@@ -26,7 +26,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 export default function MediaCard() {
   const [tabValue, setTabValue] = React.useState(0);
@@ -41,6 +41,12 @@ export default function MediaCard() {
     setOpenDrawer(!openDrawer);
   };
 
+
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
   return (
 <>
 <div id='project'>
@@ -131,7 +137,7 @@ export default function MediaCard() {
       <Grid container spacing={5} display="flex" justifyContent="center" marginTop="0.2%" >
         {tabValue === 3 && (
           <>
-            <Grid item>
+            {/* <Grid item>
 <Grid item>
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
@@ -155,7 +161,48 @@ export default function MediaCard() {
   </CardActions>
 </Card>
 </Grid>             
-</Grid>
+</Grid> */}
+
+<Grid item>
+      <Grid item>
+        <Card
+          sx={{
+            maxWidth: isClicked ? 330 : 300,
+            width: isClicked ? 'auto' : 300,
+            height: isClicked ? 'auto' : '100%',
+            backgroundColor: '#fafad2',
+            borderRadius: 8,
+            boxShadow: '0 4px 8px rgba(255, 255, 255, 0.5)',
+            transition: 'width 0.3s ease-in-out, height 0.3s ease-in-out',
+          }}
+          onClick={handleClick}
+        >
+          <CardMedia
+            sx={{ padding: 3, height: 140, borderRadius: 8 }}
+            image={elearn} // Assuming you have defined `elearn` elsewhere
+            title="E-learning platform"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              E-learning platform
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              An online e-learning platform includes study materials, quizzes, and the ability to dynamically add courses by the administrator. It is implemented using the <b>MERN</b> stack.
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button size="small">
+              <OpenInBrowserIcon />
+            </Button>
+            <Button size="small">
+              <a href="https://github.com/rathishs17/E-learning-website" target="_blank" rel="noopener noreferrer">
+                <GitHubIcon />
+              </a>
+            </Button>
+          </CardActions>
+        </Card>
+      </Grid>
+    </Grid>
 
 
 
@@ -334,7 +381,7 @@ Portfolio
 
 {tabValue === 0 && (
           <>
-            <Grid item>
+            {/* <Grid item>
 <Grid item>
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
@@ -361,9 +408,190 @@ Portfolio
   </CardActions>
 </Card>
 </Grid>             
-</Grid>
-            <Grid item>
-  {/* pro                     */}
+</Grid> */}
+
+<Grid item>
+      <Grid item>
+        <Card
+          sx={{
+            maxWidth:290,
+            width: '290',
+            height: '290',
+            backgroundColor: '#fafad2',
+            borderRadius: 8,
+            boxShadow: '0 8px 16px rgba(255, 255, 255, 0.3)'
+            ,
+            transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+            '&:hover': {
+              transform: 'scale(1.05)',
+              boxShadow: '0 8px 16px rgba(255, 255, 255, 0.5)'
+            },
+          }}
+        >
+          <CardMedia
+            sx={{ padding: 3, height: 120, borderRadius: 8 }}
+            image={elearn} 
+            title="E-learning platform"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              E-learning platform
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              An online e-learning platform includes study materials, quizzes, and the ability to dynamically add courses by the administrator. It is implemented using the <b>MERN</b> stack.
+            </Typography>
+          </CardContent>
+
+          <CardActions>
+
+<Button size="small"><a href=" https://e-learning-platform-01.netlify.app
+
+" target="_blank" rel="noopener noreferrer">
+      <OpenInBrowserIcon />
+    </a> </Button>
+<Button size="small"><a href=" https://github.com/rathishs17/E-learning-website" target="_blank" rel="noopener noreferrer">
+      <GitHubIcon  />
+    </a> </Button>
+</CardActions>
+
+         
+        </Card>
+      </Grid>
+    </Grid>
+    
+    <Grid item>
+      <Grid item>
+        <Card
+          sx={{
+            maxWidth:290,
+            width: '290',
+            height: '290',
+            backgroundColor: '#fafad2',
+            borderRadius: 8,
+            boxShadow: '0 8px 16px rgba(255, 255, 255, 0.3)'
+            ,
+            transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+            '&:hover': {
+              transform: 'scale(1.05)',
+              boxShadow: '0 8px 16px rgba(255, 255, 255, 0.5)'
+            },
+          }}
+        >
+          <CardMedia
+            sx={{ padding: 3, height: 120, borderRadius: 8 }}
+            image={c4} 
+            title="Connecting 4 gane"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+            Connecting 4 game
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+            A Connect Four game is implemented as a two-player game, where the objective is to connect four circles in a row. This functionality is implemented using <b>React JS</b>.    
+            </Typography>
+          </CardContent>
+  <CardActions>
+
+    <Button size="small"><a href=" https://connectingfourgame-rathish.netlify.app
+
+" target="_blank" rel="noopener noreferrer">
+          <OpenInBrowserIcon />
+        </a> </Button>
+    <Button size="small"><a href=" https://github.com/rathishs17/connectinggame4" target="_blank" rel="noopener noreferrer">
+          <GitHubIcon  />
+        </a> </Button>
+  </CardActions>
+        </Card>
+      </Grid>
+    </Grid>
+
+    <Grid item>
+      <Grid item>
+        <Card
+          sx={{
+            maxWidth:290,
+            width: '290',
+            height: '290',
+            backgroundColor: '#fafad2',
+            borderRadius: 8,
+            boxShadow: '0 8px 16px rgba(255, 255, 255, 0.3)'
+            ,
+            transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+            '&:hover': {
+              transform: 'scale(1.05)',
+              boxShadow: '0 8px 16px rgba(255, 255, 255, 0.5)'
+            },
+          }}
+        >
+          <CardMedia
+            sx={{ padding: 3, height: 120, borderRadius: 8 }}
+            image={weather} 
+            title="Weather App"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+            Weather App
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+            A weather app developed using <b>javascript</b> to provide real-time weather information and forecasts. Users can check current conditions, and view extended forecasts for their location.              </Typography>
+          </CardContent>
+         
+  <CardActions>
+    <Button size="small"><a href=" https://weatherapp-rathish.netlify.app
+
+" target="_blank" rel="noopener noreferrer">
+          <OpenInBrowserIcon />
+        </a> </Button>
+    <Button size="small"><a href="https://github.com/rathishs17/weatherapp" target="_blank" rel="noopener noreferrer">
+          <GitHubIcon  />
+        </a></Button>
+  </CardActions>
+        </Card>
+      </Grid>
+    </Grid>
+
+    <Grid item>
+      <Grid item>
+        <Card
+          sx={{
+            maxWidth:290,
+            width: '290',
+            height: '290',
+            backgroundColor: '#fafad2',
+            borderRadius: 8,
+            boxShadow: '0 8px 16px rgba(255, 255, 255, 0.3)'
+            ,
+            transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+            '&:hover': {
+              transform: 'scale(1.05)',
+              boxShadow: '0 8px 16px rgba(255, 255, 255, 0.5)'
+            },
+          }}
+        >
+          <CardMedia
+            sx={{ padding: 3, height: 120, borderRadius: 8 }}
+            image={p} 
+            title="portfolio"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+            Portfolio
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+            Driven by the power of <b>ReactJS</b>, my portfolio not only reflects my technical expertise but also offers a user-friendly experience, embodying innovation and proficiency in web development.            </Typography>
+          </CardContent>
+         
+  <CardActions>
+    <Button size="small"><a href=" https://github.com/rathishs17/portfolio" target="_blank" rel="noopener noreferrer">
+          <GitHubIcon  />
+        </a></Button>
+  </CardActions>
+        </Card>
+      </Grid>
+    </Grid>
+
+{/* /////////////////////////////////////////// */}
+            {/* <Grid item>
   <Grid item>
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
@@ -396,7 +624,6 @@ Portfolio
 
 
  <Grid item>
-  {/* pro                     */}
   <Grid item>
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
@@ -427,7 +654,6 @@ Weather App
 
 
  <Grid item>
-  {/* pro                     */}
   <Grid item>
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
@@ -449,7 +675,7 @@ Portfolio
   </CardActions>
 </Card>
 </Grid>   
- </Grid>
+ </Grid> */}
 
 
             <Grid item>            </Grid>
