@@ -46,8 +46,8 @@ export default function ContactSection() {
         <b>Let's Connect Over Coffee </b>
       </Typography>
       <Box sx={{ border: "2px solid white", borderRadius: "30px", width: "70%", marginLeft: "16%", marginBottom: "0%" }}>
-        <Box sx={{ marginTop: 6, padding: 2, marginLeft: 10 }}>
-          <Grid container spacing={7}>
+        <Box sx={{ marginTop: 6, padding: 2, marginLeft: 7 }}>
+          <Grid container spacing={3}>
           <Grid item xs={12} md={6} textAlign="" marginTop="0%">
   <Grid container spacing={2} direction="column"> {/* Added container with direction column */}
     <Grid item>
