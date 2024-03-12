@@ -329,8 +329,7 @@ export default function Home() {
    </Typography>
  </a>
 
- <a href="https://www.linkedin.com/in/rathish-s-301b28269
- " target="_blank" rel="noopener noreferrer">
+ <a href="https://www.linkedin.com/in/rathish-s-301b28269" target="_blank" rel="noopener noreferrer">
    <LinkedInIcon sx={{ fontSize: '2.3rem', marginTop:'6.5%', marginLeft:"43%"}} />
  </a>
  <a href="https://github.com/rathishs17" target="_blank" rel="noopener noreferrer">
