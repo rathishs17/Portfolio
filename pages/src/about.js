@@ -12,7 +12,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import Grid from '@mui/material/Grid';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import profileImage1 from './images/mentor3.jpg';
-import profileImage from './images/rathishai.jpg';
+import profileImage2 from './images/rathishai.jpg';
 import achieves from './images/acheive.jpg';
 
 import redu from './images/rathishedu.jpg';
@@ -27,6 +27,8 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import { Link } from 'react-router-dom';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import profileImage from './images/rathishai-removebg-preview.png';
+
 
 const bull = (
     <Box
@@ -72,12 +74,16 @@ const bull = (
     <React.Fragment>
       <Card>
       <CardContent sx={{ 
-        background: 'linear-gradient(45deg, #e6f7ff 30%, #fcd7e1 90%)', // Adjust the slightly lighter pink color code
+        // background: 'linear-gradient(45deg, #e6f7ff 30%, #fcd7e1 90%)', // Adjust the slightly lighter pink color code
         display: 'flex', 
-  alignItems: 'center' 
+        backgroundColor:'#101629',
+  alignItems: 'center',
+  color:'white' ,
+  border:'1px solid white',
+  borderRadius:'10px'
 }}>          {<SchoolIcon sx={{ fontSize: '2.3rem',marginRight:"3.5%", marginBottom:"13.5%" }} />}       
           <div>
-            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom sx={{
+            <Typography sx={{ fontSize: 14 }} color="" gutterBottom sx={{
               fontFamily: 'Poppins, sans-serif',
               fontWeight: '500',
               fontSize: '1.2rem',
@@ -269,13 +275,11 @@ export default function About() {
       <Box sx={{ marginTop: 10, padding: 4 }}>
         <Grid container spacing={3}>
           {/* Left Column (Image) */}
-          <Grid item xs={12} md={6} textAlign="center" marginTop="2.3%">
-            <img src={profileImage} alt="Profile" style={{ width: '50%', height: 'auto', borderRadius: 8 , animation: 'float 3s infinite'}} />
-          </Grid>
+         
 
           {/* Right Column (Text) */}
           <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ fontFamily: '"Poppins", sans-serif', textAlign: 'center' , marginTop: '-4%'}}>
+          <Typography variant="h5" sx={{ fontFamily: '"Poppins", sans-serif', textAlign: 'center' , marginTop: '-9%'}}>
               <h1><b color='grey'>About me</b></h1> {/* Replace with your actual text */}
             </Typography>
             <Typography sx={{ fontFamily: 'Poppins, sans-serif', textAlign: 'center', marginTop: '0%', letterSpacing: '0.5px', fontSize: '1.2rem' }}>
@@ -290,6 +294,7 @@ export default function About() {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    marginLeft:'3.8%'
   }}
 >
   {/* Your text content goes here */}
@@ -306,6 +311,14 @@ export default function About() {
            
                </Grid>
 
+
+
+
+
+               <Grid item xs={12} md={6} textAlign="center" marginTop="0%">
+            <img src={profileImage} alt="Profile" style={{ width: '50%', height: 'auto', borderRadius: 8 , animation: 'float 3s infinite'}} />
+          </Grid>
+
         </Grid>
         
       </Box>
@@ -314,7 +327,7 @@ export default function About() {
 
 
 
-    <Typography variant="h5" sx={{ display: 'flex', fontFamily: '"Poppins", sans-serif', textAlign: 'center' , marginTop: '0%',justifyContent:'center'}}>
+    <Typography variant="h5" sx={{ display: 'flex', fontFamily: '"Poppins", sans-serif', textAlign: 'center' , marginTop: '-2.4%',justifyContent:'center'}}>
               <h1><b color='grey'>Education</b></h1> {/* Replace with your actual text */}
             </Typography>
 

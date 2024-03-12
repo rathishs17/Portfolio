@@ -20,7 +20,7 @@ const App = () => (
 <About/>
 <SimplePaper/>
 <MediaCard/>
-<SimplePaper1/>
+{/* <SimplePaper1/> */}
 <ContactPage/>
   </BrowserRouter>
   </div>

@@ -138,7 +138,7 @@ export default function Home() {
   return (
     <>
       <Box sx={{ flexGrow: 3 }}>
-        <AppBar position="static" sx={{ background: '#101629', boxShadow: '5px 5x 5px white',color:'white' }}>
+        <AppBar position="fixed" sx={{ background: '#101629', boxShadow: '5px 5x 5px white',color:'white' ,maxWidth:'98.8%',marginRight:'0.55%'}}>
           <Toolbar>
             <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'white', fontFamily: '"Poppins", sans-serif' }}>
               <b>Rathish</b>
@@ -319,7 +319,7 @@ export default function Home() {
    <LinkedInIcon sx={{ fontSize: '2.3rem', marginTop:'6.5%', marginLeft:"43%"}} />
  </a>
  <a href="https://github.com/rathishs17" target="_blank" rel="noopener noreferrer">
-   <GitHubIcon sx={{ fontSize: '2.3rem', marginTop:'6.5%', marginLeft:"1.5%" }} />
+   <GitHubIcon sx={{ fontSize: '2.3rem', marginTop:'6.5%', marginLeft:"1.5%" ,color:"wite"}} />
  </a>
     </Grid>
 

@@ -39,7 +39,7 @@ export default function ContactSection() {
           fontFamily: '"Poppins", sans-serif',
           display: 'flex',
           justifyContent: 'center',
-          marginTop: '4%',
+          marginTop: '6%',
           marginBottom: '3%',
         }}
       >
@@ -48,7 +48,7 @@ export default function ContactSection() {
       <Box sx={{ border: "2px solid white", borderRadius: "30px", width: "70%", marginLeft: "16%", marginBottom: "0%" }}>
         <Box sx={{ marginTop: 6, padding: 2, marginLeft: 7 }}>
           <Grid container spacing={3}>
-          <Grid item xs={12} md={6} textAlign="" marginTop="0%">
+          <Grid item xs={6} md={0} textAlign="" marginTop="0%">
   <Grid container spacing={2} direction="column"> {/* Added container with direction column */}
     <Grid item>
       <Typography marginBottom="7%"><h1>Contact Info</h1></Typography> {/* Moved inside Grid item */}
@@ -104,10 +104,12 @@ export default function ContactSection() {
             paddingBottom: '3%',
             boxShadow: '0px 0px 1px 1px rgba(0, 2z5, 255, 0.2), 0 1px 1px 0 rgba(0, 255, 255, 0.19)',
 
-            border: '2px solid grey',
+            border: '1px solid white',
             borderRadius: '8px',
-            backgroundColor: '#F0FFFF	',
+            backgroundColor: '#101629',
           }}
+          placeholderStyle={{ color: 'red' }} // Change the color to your desired color
+
         />
         <input
           type="email"
@@ -117,14 +119,17 @@ export default function ContactSection() {
             marginTop: '3%',
             paddingLeft: '5%',
             paddingRight: '9%',
+            color:'white',
             paddingTop: '3%',
             paddingBottom: '3%',
             boxShadow: '0px 0px 0.1px 0.1px rgba(0, 2z5, 255, 0.2), 0 0.1px 0.1px 0 rgba(0, 255, 255, 0.19)',
 
             borderRadius: '8px',
-            border: '2px solid grey',
-            backgroundColor: '#F0FFFF	',
+            border: '1px solid white',
+            backgroundColor: '#101629	',
           }}
+          placeholderStyle={{ color: 'red' }} // Change the color to your desired color
+
         />
         <textarea
           name="message"
@@ -137,10 +142,12 @@ export default function ContactSection() {
             paddingBottom: '10%',
             boxShadow: '0px 0px 0.1px 0.1px rgba(0, 2z5, 255, 0.2), 0 0.1px 0.1px 0 rgba(0, 255, 255, 0.19)',
 
-            border: '2px solid grey',
+            border: '1.5px solid white',
             borderRadius: '8px',
-            backgroundColor: '#F0FFFF	',
+            backgroundColor: '#101629	',
           }}
+          placeholderStyle={{ color: '' }} // Change the color to your desired color
+
         />
         <input
           type="submit"

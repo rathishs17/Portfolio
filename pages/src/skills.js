@@ -10,6 +10,8 @@ import c from  './images/clog.jpg';
 import react from  './images/rlog.jpg';
 import node from  './images/nodjs.jpg';
 import git from  './images/gitlog.jpg';
+import expressjs from  './images/express.jpg';
+
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
@@ -33,8 +35,9 @@ import ListItem from '@mui/material/ListItem';
 const Acheivement = (
   <React.Fragment >
 <CardContent sx={{ 
-      background: 'linear-gradient(45deg, #e6f7ff 30%, #fcd7e1 90%)', 
-     
+ backgroundColor: '#101629',
+ color: 'white',
+ borderRadius: 8,     
 }}>       
       <Typography variant="body2" marginTop="2%" sx={{
   fontFamily: 'Poppins, sans-serif',
@@ -60,8 +63,9 @@ const Acheivement = (
 const Acheivement1 = (
   <React.Fragment >
 <CardContent sx={{ 
-      background: 'linear-gradient(45deg, #e6f7ff 30%, #fcd7e1 90%)', 
-     
+ backgroundColor: '#101629',
+ color: 'white',
+ borderRadius: 8,     
 }}>       
       <Typography variant="body2" marginTop="2%" sx={{
   fontFamily: 'Poppins, sans-serif',
@@ -90,20 +94,29 @@ const Acheivement1 = (
 const Experiences = (
   <React.Fragment >
 <CardContent sx={{ 
-      background: 'linear-gradient(45deg, #e6f7ff 30%, #fcd7e1 90%)',
+      // background: 'linear-gradient(45deg, #e6f7ff 30%, #fcd7e1 90%)', backgroundColor: 'rgba(255, 255, 255, 4.7)',
+      // backgroundColor: 'rgba(255, 255, 255, 0.5)', // Adjust the alpha value for transparency
+      // backdropFilter: 'blur(10px)', // Adjust the blur value for the glass effect
+      // background: 'linear-gradient(45deg, #e6f7ff 30%, #fcd7e1 90%)'
+      border: '1px solid #ccc', // Adjust the border properties as needed
+      padding: '20px', // Add padding for spacing within the bo,
+             backgroundColor: '#101629',
+             textColor: 'white',
+             borderRadius: 8,
+
      
 }}>       
-      <Typography variant="body2" marginTop="2%" sx={{
+      <Typography color="white" variant="body2" marginTop="2%" sx={{
   fontFamily: 'Poppins, sans-serif',
   fontWeight: '500', 
   fontSize: '1.3rem',
-}}>
+  color: 'white',}}>
  <b><h3>Full Stack Web Development Intern</h3></b>
  <p>SKOLAR - Internship</p>
  <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom sx={{
               fontFamily: 'Poppins, sans-serif',
               fontWeight: '500',
-              fontSize: '1.1rem',
+              fontSize: '1.1rem',color: 'white',
             }}>
 October 2023 to 30 December 2023 - 3 months<br/>
 Remote
@@ -223,7 +236,7 @@ export default function SimplePaper() {
         display: 'flex',
         flexWrap: 'wrap',
         '& > :not(style)': {
-          m: 5,
+          m: 3.8,
           width: 100,
           height: 106,
         },
@@ -252,11 +265,15 @@ export default function SimplePaper() {
       </Paper>
       <Paper elevation={3} sx={{ display: '', alignItems: 'center', justifyContent: 'center',paddingLeft:'0%' }}>
         <Avatar src={react} alt="Skills Icon" sx={{ width: 100, height: 80 }} />
-        <Typography sx={{paddingLeft:'16%',marginTop:'1%'}} ><b>React JS</b></Typography>
+        <Typography sx={{paddingLeft:'16%',marginTop:'1%'}} ><b>ReactJS</b></Typography>
       </Paper>
       <Paper elevation={3} sx={{ display: '', alignItems: 'center', justifyContent: 'center',paddingLeft:'0%' }}>
         <Avatar src={node} alt="Skills Icon" sx={{ width: 100, height: 80 }} />
-        <Typography sx={{paddingLeft:'18%',marginTop:'1%'}} ><b>Node JS</b></Typography>
+        <Typography sx={{paddingLeft:'18%',marginTop:'1%'}} ><b>NodeJS</b></Typography>
+      </Paper>
+      <Paper elevation={3} sx={{ display: '', alignItems: 'center', justifyContent: 'center',paddingLeft:'0%' }}>
+        <Avatar src={expressjs} alt="Skills Icon" sx={{ width: 100, height: 80 }} />
+        <Typography sx={{paddingLeft:'13%',marginTop:'1%'}} ><b>ExpressJS</b></Typography>
       </Paper>
       <Paper elevation={3} sx={{ display: '', alignItems: 'center', justifyContent: 'center',paddingLeft:'0%' }}>
         <Avatar src={git} alt="Skills Icon" sx={{ width: 100, height: 80 }} />

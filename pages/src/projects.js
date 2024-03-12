@@ -127,10 +127,9 @@ export default function MediaCard() {
 
      
       <Tabs value={tabValue} onChange={handleTabChange} centered  >
-        {/* <Tab label="WEB" /> */}
-        {/* <Tab label="WEB" />
-        <Tab label="CORE" /> */}
-
+        <Tab label="WEB" style={{ color: 'skyblue' }}/>
+         <Tab label="CORE" style={{ color: 'skyblue' }}/>
+       {/* <Tab label="CORE" /> */}
       </Tabs>
 
      
@@ -692,7 +691,7 @@ Portfolio
 
 {tabValue === 1 && (
           <>
-            <Grid item>
+            {/* <Grid item>
 <Grid item>
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
@@ -708,13 +707,13 @@ Portfolio
     Implemented with ESP32, incorporating temperature, turbidity, and ultrasonic sensors. The system utilizes the Blynk app for convenient monitoring and visualization of water quality reports.    </Typography>
   </CardContent>
   <CardActions>
-    {/* <Button size="small"><OpenInBrowserIcon/></Button> */}
+    <Button size="small"><OpenInBrowserIcon/></Button>
   </CardActions>
 </Card>
 </Grid>             
 </Grid>
             <Grid item>
-  {/* pro                     */}
+  pro                    
   <Grid item>
 <Card sx={{ maxWidth: 300, backgroundColor: '#fafad2', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)' }}>
   <CardMedia
@@ -730,11 +729,90 @@ Portfolio
     Designed for seamless integration, the digital lock door system using ESP32 controller offers convenience and heightened security, making it an ideal solution for modern smart homes and businesses.  </Typography>
   </CardContent>
   <CardActions>
-    {/* <Button size="small"><OpenInBrowserIcon/></Button> */}
+    <Button size="small"><OpenInBrowserIcon/></Button>
   </CardActions>
 </Card>
 </Grid>   
- </Grid>
+ </Grid> */}
+
+
+
+
+
+
+
+
+
+
+ <Grid item>
+      <Grid item>
+        <Card
+          sx={{
+            maxWidth:290,
+            width: '290',
+            height: '290',
+            backgroundColor: '#fafad2',
+            borderRadius: 8,
+            boxShadow: '0 8px 16px rgba(255, 255, 255, 0.3)'
+            ,
+            transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+            '&:hover': {
+              transform: 'scale(1.05)',
+              boxShadow: '0 8px 16px rgba(255, 255, 255, 0.5)'
+            },
+          }}
+        >
+          <CardMedia
+            sx={{ padding: 3, height: 120, borderRadius: 8 }}
+            image={p} 
+            title="water quality monitoring system"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+            Water Quality Monitoring System
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+            Implemented with ESP32, incorporating temperature, turbidity, and ultrasonic sensors. The system utilizes the Blynk app for convenient monitoring and visualization of water quality reports.    </Typography>
+          </CardContent>
+        </Card>
+      </Grid>
+    </Grid>
+
+
+    
+ <Grid item>
+      <Grid item>
+        <Card
+          sx={{
+            maxWidth:290,
+            width: '290',
+            height: '290',
+            backgroundColor: '#fafad2',
+            borderRadius: 8,
+            boxShadow: '0 8px 16px rgba(255, 255, 255, 0.3)'
+            ,
+            transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+            '&:hover': {
+              transform: 'scale(1.05)',
+              boxShadow: '0 8px 16px rgba(255, 255, 255, 0.5)'
+            },
+          }}
+        >
+          <CardMedia
+            sx={{ padding: 3, height: 120, borderRadius: 8 }}
+            image={p} 
+            title=" Digital Lock Door System "
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+            Digital Lock Door System
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+            Designed for seamless integration, the digital lock door system using ESP32 controller offers heightened security, making it an ideal solution for modern smart homes and businesses.  </Typography>
+          </CardContent>
+        </Card>
+      </Grid>
+    </Grid>
 
 
  {/* <Grid item>
