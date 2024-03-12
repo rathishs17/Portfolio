@@ -137,8 +137,8 @@ export default function Home() {
 
   return (
     <>
-      <Box sx={{ flexGrow: 3 }}>
-        <AppBar position="fixed" sx={{ background: '#101629', boxShadow: '5px 5x 5px white',color:'white' ,maxWidth:'98.8%',marginRight:'0.55%'}}>
+      <Box sx={{ flexGrow: 3 ,backgroundColor:''}}>
+        <AppBar position="fixed" sx={{ background: '#101629',             boxShadow: '0 8px 16px rgba(255, 255, 255, 0.13)',color:'white' ,maxWidth:'98.87%',marginRight:'0.575%'}}>
           <Toolbar>
             <Typography variant="h4" component="div" sx={{ flexGrow: 1, color: 'white', fontFamily: '"Poppins", sans-serif' }}>
               <b>Rathish</b>
@@ -154,9 +154,20 @@ export default function Home() {
               </IconButton>
             </Box>
             <Box sx={{ display: { xs: 'none', md: 'block' } }}>
-              <Link to="/" style={{ textDecoration: 'none' }}>
-                <Button startIcon={<HomeIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>Home</Button>
-              </Link>
+              {/* <Link to="homee" style={{ textDecoration: 'none' }}>
+                <Button startIcon={<HomeIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}></Button>
+              </Link> */}
+
+              
+<ScrollLink
+  to="homee"
+  smooth={true}
+  duration={500} // Adjust the duration as needed
+  style={{ textDecoration: 'none', color: 'inherit' }}
+>
+  <Button startIcon={<HomeIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>
+  Home  </Button>
+</ScrollLink>
               {/* <a href="/about" style={{ textDecoration: 'none', color: 'inherit' }}>
               <Button startIcon={<PersonIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>
     About
@@ -172,6 +183,8 @@ export default function Home() {
     About
   </Button>
 </ScrollLink>
+
+
 
               {/* <Link to="/skills" style={{ textDecoration: 'none' }}>
                 <Button startIcon={<TipsAndUpdatesIcon sx={{ fontSize: '1.5rem' }} />} sx={{ textTransform: 'none', color: 'white', fontSize: '1.5rem', marginRight: 2 }}>Skills</Button>
@@ -222,7 +235,7 @@ export default function Home() {
               </ListItem>
             </Link> */}
             <ScrollLink
-  to=""
+  to="homee"
   smooth={true}
   duration={500} // Adjust the duration as needed
   style={{ textDecoration: 'none', color: 'inherit' }}
@@ -276,6 +289,8 @@ export default function Home() {
         </Drawer>
 
         {/* Rest of your content */}
+        <div id="homee">
+
 
         <Box sx={{ marginTop: 3, padding: 4 }}>
         <Grid container spacing={3}>
@@ -325,7 +340,8 @@ export default function Home() {
 
          </Grid>
         
-      </Box>
+      </Box>        </div>
+
       </Box>
     </>
   );

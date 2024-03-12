@@ -72,9 +72,16 @@ export default function ContactSection() {
       </Stack>
     </Grid>
     <Grid item>
-      <Stack direction="row" spacing={2} alignItems="center" marginTop="10%" marginLeft="0.5%" fontSize="9rem">
-        <GitHubIcon sx={{ fontSize: '2.5rem' }} />
-        <LinkedInIcon sx={{ fontSize: '2.5rem' }} />
+      <Stack direction="row" spacing={2} alignItems="center" marginTop="-12.3%" marginLeft="0.5%" fontSize="9rem">
+        {/* <GitHubIcon sx={{ fontSize: '2.5rem' }} /> */}
+        <a href="https://www.linkedin.com/in/rathish-s-301b28269
+ " target="_blank" rel="noopener noreferrer">
+   <LinkedInIcon sx={{ fontSize: '2.5rem', }} />
+ </a>
+ <a href="https://github.com/rathishs17" target="_blank" rel="noopener noreferrer">
+   <GitHubIcon sx={{ fontSize: '2.5rem', }} />
+ </a>
+        {/* <LinkedInIcon sx={{ fontSize: '2.5rem' }} /> */}
       </Stack>
     </Grid>
   </Grid>
